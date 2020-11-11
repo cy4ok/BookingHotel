@@ -3,7 +3,6 @@ import Logo from '../Logo';
 import Menu from '../Menu';
 import ShowButton from '../ShowButton/ShowButton';
 import SlideMenu from '../SlideMenu';
-import "./Header.css"
 
 class Header extends React.Component {
 
@@ -23,7 +22,7 @@ class Header extends React.Component {
 
     render() {
         return(
-        <header className="Header" >
+        <header className="z-10 absolute top-0 left-0 w-screen bg-transparent" >
             <div class="max-w-7xl mx-auto px-4 sm:px-6">
                 <div class="flex justify-between items-center py-8 md:justify-start md:space-x-10">                   
                     <Logo/>
