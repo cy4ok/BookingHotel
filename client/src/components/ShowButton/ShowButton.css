@@ -1,0 +1,21 @@
+#show-button {
+    width: 22px;
+    height: 22px;
+    outline: none;
+    transition: all 0.2s;
+}
+#show-button:hover {
+    cursor: pointer;
+}
+.btn--menu {
+    flex-flow: column;
+}
+.bar {
+    display: block;
+    height: 4px;
+    width: 22px;
+    background-color: #fff;
+}
+.bar:not(:first-child) {
+    margin-top: 8px;
+}
