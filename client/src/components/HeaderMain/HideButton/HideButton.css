@@ -1,0 +1,30 @@
+#hide-button {
+    width: 25px;
+    height: 25px;
+    outline: none;
+    transition: all 0.2s;
+    float: right;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+#hide-button:hover {
+    cursor: pointer;
+}
+
+.btn--close:before,
+.btn--close:after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 4px;
+    background: #ffffff;
+}
+
+.btn--close:before {
+    transform: rotate(45deg);
+}
+
+.btn--close:after {
+    transform: rotate(-45deg);
+}

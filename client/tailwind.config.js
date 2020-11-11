@@ -14,6 +14,7 @@ module.exports = {
     },
     backgroundColor: (theme) => ({
       primary: "#393937",
+      secondary: "#564038",
     }),
   },
   variants: {},

@@ -1,0 +1,40 @@
+#slide-menu {
+    width: auto;
+    height: 100vh;
+    background-color: #393937;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: transform 1s cubic-bezier(0, 0.52, 0, 1);
+    overflow-y: scroll;
+    z-index: 100;
+}
+
+#slide-menu.hide {
+    transform: translate3d(+100vw, 0, 0);
+}
+
+#slide-menu.show {
+    transform: translate3d(0, 0, 0);
+}
+
+.slide-menu-link:hover {
+    color: #ca9d56;
+}
+
+.btn--primary {
+    background-color: #ca9d56;
+    color: #fff;
+    min-width: 180px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .5px;
+    height: 54px;
+    padding: 3px 30px 0;
+    transition: none;
+    font-size: 12px;
+}
+
+.btn--primary:hover {
+    opacity: .85;
+} 
