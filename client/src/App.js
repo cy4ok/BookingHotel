@@ -3,6 +3,7 @@ import "./App.css";
 // This one import will make Tailwind’s utility classes available to the entire app,
 // no need to import it again elsewhere.
 import "./tailwind.output.css";
+import Offer from "./components/Offer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Offer />
     </div>
   );
 }
