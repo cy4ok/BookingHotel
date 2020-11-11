@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    min-height: 860px;
+    margin: 0;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.wp-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.map {
+    width: 50%;
+}
