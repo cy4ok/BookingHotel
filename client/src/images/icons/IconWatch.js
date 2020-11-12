@@ -1,6 +1,6 @@
 import React from "react";
 
-const OfferIconWatch = () => {
+const IconWatch = () => {
   return (
     <svg
       width="23"
@@ -25,4 +25,4 @@ const OfferIconWatch = () => {
   );
 };
 
-export default OfferIconWatch;
+export default IconWatch;

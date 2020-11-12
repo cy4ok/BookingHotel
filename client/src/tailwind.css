@@ -12,9 +12,9 @@
   box-sizing: border-box;
 }
 
-/* .offer-section {
-  min-height: 860px;
-} */
+.header-section {
+  height: 620px;
+}
 
 .offer-icon {
   top: 7px;

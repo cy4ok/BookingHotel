@@ -1,6 +1,6 @@
 import React from "react";
 
-const OfferIconBag = () => {
+const IconBag = () => {
   return (
     <svg
       width="30"
@@ -20,4 +20,4 @@ const OfferIconBag = () => {
   );
 };
 
-export default OfferIconBag;
+export default IconBag;

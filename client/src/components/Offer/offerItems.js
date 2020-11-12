@@ -1,29 +1,29 @@
-import OfferIconKey from "./images/OfferIconKey";
-import OfferIconSign from "./images/OfferIconSign";
-import OfferIconBag from "./images/OfferIconBag";
-import OfferIconWatch from "./images/OfferIconWatch";
+import IconKey from "../../images/icons/IconKey";
+import IconSign from "../../images/icons/IconSign";
+import IconBag from "../../images/icons/IconBag";
+import IconWatch from "../../images/icons/IconWatch";
 
 export const offerItems = [
   {
-    icon: <OfferIconKey />,
+    icon: <IconKey />,
     title: "Уютные апартаменты",
     text:
       "В наших апартаментах вы будете как дома. Мы позаботились о приватности: в каждом блоке всего 6 апартаментов",
   },
   {
-    icon: <OfferIconSign />,
+    icon: <IconSign />,
     title: "Гостиничный сервис",
     text:
       "Хотите заказать уборку или завтрак в номер? Любой сервис для вашего комфорта",
   },
   {
-    icon: <OfferIconBag />,
+    icon: <IconBag />,
     title: "Гибкие тарифы",
     text:
       "Чем дольше вы живете, тем дешевле! Платите только за те услуги, которые вам необходимы",
   },
   {
-    icon: <OfferIconWatch />,
+    icon: <IconWatch />,
     title: "Круглосуточный ресепшн и охрана",
     text: "Мы к вашим услугам 24/7 и заботимся о вашем комфорте и безопасности",
   },
