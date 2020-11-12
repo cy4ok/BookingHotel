@@ -1,7 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Header from "./components/HeaderMain/Header";
-import SectionBg from "./components/HeaderMain/SectionBg";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Header from './components/Header/Header';
 import "./tailwind.output.css";
 import "./index.css";
 import Offer from "./components/Offer";
@@ -10,9 +9,9 @@ import Offer from "./components/Offer";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <SectionBg />
-    <Offer />
+    <Header/>
+    <Offer/>
+   
   </React.StrictMode>,
   document.getElementById("root")
 );

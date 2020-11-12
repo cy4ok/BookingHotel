@@ -12,8 +12,8 @@ class SlideMenu extends Component {
         return (           
             <div id="slide-menu" className={visibility}> 
                 <HideButton handleClick={this.props.handleClick} />
-                <div class="relative text-xl text-white grid gap-8 p-8">
-                    <div class="flex flex-col px-5">
+                <div class="relative text-white grid gap-8 p-8">
+                    <div class="flex flex-col px-5 text-lg">
                         <SlideItem name="Апарт-отели"/>   
                         <SlideItem name="Бронировать апартаменты"/>
                         <SlideItem name="Корпоративным клиентам"/>
@@ -23,7 +23,7 @@ class SlideMenu extends Component {
                         <SlideItem name="О RBI PM"/>
                         <SlideItem name="Контакты"/>
                     </div>
-                    <div class="flex flex-col px-5">
+                    <div class="flex flex-col px-5 text-2xl">
                         <SlideItem name="+7 (812) 561 57 20"/>
                         <SlideItem name="welcome@bookapart.ru"/>
                     </div>
