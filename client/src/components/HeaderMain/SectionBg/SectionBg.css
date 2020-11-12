@@ -1,0 +1,27 @@
+.SectionBg {
+  width: 100vw;
+  height: 620px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(60%, rgba(45, 110, 112, 0.9)), to(rgba(25, 62, 62, 0.9))), url(../img/layer_bg.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.75) 100%), url(../img/bg-1.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover; 
+  background-position: center, center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+}
+
+.SectionBg h4 {
+    margin-bottom: 23px;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.SectionBg h1 {
+    font-size: 54px;
+    line-height: 56px;
+}
