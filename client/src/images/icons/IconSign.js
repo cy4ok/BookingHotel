@@ -1,6 +1,6 @@
 import React from "react";
 
-const OfferIconSign = () => {
+const IconSign = () => {
   return (
     <svg
       width="18"
@@ -33,4 +33,4 @@ const OfferIconSign = () => {
   );
 };
 
-export default OfferIconSign;
+export default IconSign;
