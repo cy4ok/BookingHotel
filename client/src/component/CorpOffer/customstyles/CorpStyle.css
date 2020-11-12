@@ -1,0 +1,22 @@
+.corpoffer {
+  background-color: #393937;
+}
+.wrap {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+.corpoffer-img {
+  background-image: url(../img/corpoffer-photo.jpg);
+  height: 800px;
+}
+.corpoffer-link {
+  color: #ca9d56;
+}
+.corpoffer-linicon {
+  display: inline;
+  fill: #ca9d56;
+}
+.corpoffer-link:hover {
+  opacity: 0.8;
+}

@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import CorpOffer from "./component/CorpOffer/CorpOffer"
 // This one import will make Tailwind’s utility classes available to the entire app,
 // no need to import it again elsewhere.
 import "./tailwind.output.css";
@@ -21,6 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <CorpOffer/>
     </div>
   );
 }
