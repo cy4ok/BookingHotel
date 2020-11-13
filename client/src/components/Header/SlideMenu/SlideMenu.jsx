@@ -12,18 +12,18 @@ class SlideMenu extends Component {
         return (           
             <div id="slide-menu" className={visibility}> 
                 <HideButton handleClick={this.props.handleClick} />
-                <div class="relative text-xl text-white grid gap-8 p-8">
-                    <div class="flex flex-col px-5">
-                        <SlideItem name="Апарт-отели"/>   
-                        <SlideItem name="Бронировать апартаменты"/>
-                        <SlideItem name="Корпоративным клиентам"/>
-                        <SlideItem name="Программа лояльности"/>
-                        <SlideItem name="Ресторан ATLAS BISTRO"/>
-                        <SlideItem name="Акции"/>
-                        <SlideItem name="О RBI PM"/>
-                        <SlideItem name="Контакты"/>
+                <div class="relative text-white grid gap-8 p-8">
+                    <div class="flex flex-col px-5 text-lg">
+                        <SlideItem name="Апарт-отели" url="/apartments"/>   
+                        <SlideItem name="Бронировать апартаменты" url="/booking"/>
+                        <SlideItem name="Корпоративным клиентам" url="/to-clients"/>
+                        <SlideItem name="Программа лояльности" url="/loyalty"/>
+                        <SlideItem name="Ресторан ATLAS BISTRO" url="/restaurant"/>
+                        <SlideItem name="Акции" url="/offers"/>
+                        <SlideItem name="О RBI PM" url="/about"/>
+                        <SlideItem name="Контакты" url="/contacts"/>
                     </div>
-                    <div class="flex flex-col px-5">
+                    <div class="flex flex-col px-5 text-2xl">
                         <SlideItem name="+7 (812) 561 57 20"/>
                         <SlideItem name="welcome@bookapart.ru"/>
                     </div>
