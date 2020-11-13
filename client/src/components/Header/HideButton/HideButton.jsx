@@ -5,7 +5,7 @@ class HideButton extends Component {
     render() {
         return (
             <button id="hide-button" onClick={this.props.handleClick}>
-                <div class="btn--close"></div>
+                <div className="btn--close"></div>
             </button>
         );
     }

@@ -11,14 +11,14 @@ module.exports = {
       backgroundImage: (theme) => ({
         "offer-photo": "url('components/Offer/images/offer-photo.jpg')",
       }),
-    },
-    backgroundColor: (theme) => ({
-      primary: "#393937",
-      secondary: "#564038",
-      third: "#ca9d56",
-    }),
-    textColor: {
-      brown: "#ca9d56",
+      colors: {
+        brown: "#ca9d56",
+      },
+      backgroundColor: (theme) => ({
+        primary: "#393937",
+        secondary: "#564038",
+        third: "#ca9d56",
+      }),
     },
   },
   variants: {},
