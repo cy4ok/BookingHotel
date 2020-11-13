@@ -11,8 +11,8 @@ const Offer = () => {
             <h4 className="uppercase text-xs font-bold">что мы предлагаем</h4>
             <div>
               <div className="w-full">
-                {offerItems.map(({ icon, title, text }) => {
-                  return <OfferItem icon={icon} title={title} text={text} />;
+                {offerItems.map(({ icon, title, text }, idx) => {
+                  return <OfferItem icon={icon} title={title} text={text} key={idx} />;
                 })}
               </div>
             </div>

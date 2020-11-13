@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Header from './components/Header/Header';
+import React from "react";
+import ReactDOM from "react-dom";
+import Header from "./components/Header/Header";
 import "./tailwind.output.css";
 import "./index.css";
 import Offer from "./components/Offer";
@@ -9,9 +9,8 @@ import Offer from "./components/Offer";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header/>
-    <Offer/>
-   
+    <Header />
+    <Offer />
   </React.StrictMode>,
   document.getElementById("root")
 );
