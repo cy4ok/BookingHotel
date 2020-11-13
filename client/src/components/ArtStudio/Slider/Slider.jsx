@@ -39,7 +39,6 @@ export default class SimpleSlider extends Component {
         {
           img: "10.jpg",
         },
-        ,
         {
           img: "11.jpg",
         },
