@@ -5,6 +5,8 @@ import SectionBg from "./components/HeaderMain/SectionBg";
 import "./tailwind.output.css";
 import "./index.css";
 import Offer from "./components/Offer";
+import SectionArtStudio from "./components/ArtStudio/ArtStudio";
+
 
 // import reportWebVitals from './reportWebVitals';
 
@@ -13,6 +15,7 @@ ReactDOM.render(
     <Header />
     <SectionBg />
     <Offer />
+    <SectionArtStudio />
   </React.StrictMode>,
   document.getElementById("root")
 );
