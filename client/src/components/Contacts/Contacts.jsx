@@ -5,7 +5,7 @@ import ContactItem from "./ContactItem.jsx";
 import ContactItems from "./ContactItems.jsx";
 import "./style.css";
 
-const Contact = () => {
+const Contacts = () => {
     return (
         <div className=" offer-section">
             <div className="pt-20 wrap">
@@ -28,4 +28,4 @@ const Contact = () => {
     )
 };
 
-export default Contact; 
+export default Contacts;

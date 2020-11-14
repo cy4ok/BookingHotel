@@ -1,29 +1,31 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // This one import will make Tailwind’s utility classes available to the entire app,
 // no need to import it again elsewhere.
 import "./tailwind.output.css";
-import Offer from "./components/Offer";
-import Contacts from "./components/Contacts"
+import Header from "./components/Header/Header";
+import Contacts from "./components/Contacts";
+import MainPage from "./pages/MainPage";
 
 function App() {
-    return ( <div className = "App" >
-        <header className = "App-header" >
-        <img src = { logo }
-        className = "App-logo"
-        alt = "logo" / >
-        <p className = "border-solid border-4 border-gray-600" >
-        Edit < code > src / App.js </code> and save to reload. </p> 
-        <a className = "App-link"
-        href = "https://reactjs.org"
-        target = "_blank"
-        rel = "noopener noreferrer" >
-        Learn React </a> 
-        </header> 
-        <Offer />
-        
-        </div>
-    );
+  return (
+    <React.StrictMode>
+      <Router>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={MainPage} />
+          {/* <Route path="/apartments" component={Apartments} /> */}
+          {/* <Route path="/booking" component={Booking} /> */}
+          {/* <Route path="/to-clients" component={ToClients} /> */}
+          {/* <Route path="/loyalty" component={Loyalty} /> */}
+          {/* <Route path="/restaurant" component={Restaurant} /> */}
+          {/* <Route path="/discounts" component={Discounts} /> */}
+          {/* <Route path="/about" component={About} /> */}
+          <Route exact path="/contacts" component={Contacts} />
+        </Switch>
+      </Router>
+    </React.StrictMode>
+  );
 }
 
 export default App;
