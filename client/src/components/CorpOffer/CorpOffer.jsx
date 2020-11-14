@@ -1,5 +1,4 @@
 import React from "react";
-import bgimage from "./img/corpoffer-photo.jpg";
 import CorpOfferItem from "./CorpOfferItem";
 import { corpOfferData } from "./corpOfferData";
 import { ReactComponent as LinkIcon } from "./img/external_link.svg";
