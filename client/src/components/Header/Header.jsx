@@ -1,9 +1,9 @@
 import React from 'react';
-import Logo from '../Logo';
-import Menu from '../Menu';
-import ShowButton from '../ShowButton/ShowButton';
-import SlideMenu from '../SlideMenu';
-import SectionBg from '../SectionBg';
+import Logo from './Logo';
+import Menu from './Menu';
+import ShowButton from './ShowButton/ShowButton';
+import SlideMenu from './SlideMenu';
+import SectionBg from './SectionBg';
 
 class Header extends React.Component {
 
