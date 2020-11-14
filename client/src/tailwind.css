@@ -3,3 +3,26 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+  padding: 0 50px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.header-section {
+  height: 620px;
+}
+
+.offer-icon {
+  top: 7px;
+}
+
+.offer-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+.offer-photo {
+  height: 800px;
+}

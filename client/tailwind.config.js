@@ -7,7 +7,19 @@ module.exports = {
     "public/**/*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        "offer-photo": "url('components/Offer/images/offer-photo.jpg')",
+      }),
+      colors: {
+        brown: "#ca9d56",
+      },
+      backgroundColor: (theme) => ({
+        primary: "#393937",
+        secondary: "#564038",
+        third: "#ca9d56",
+      }),
+    },
   },
   variants: {},
   plugins: [],
