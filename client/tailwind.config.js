@@ -6,6 +6,9 @@ module.exports = {
     "src/**/*.tsx",
     "public/**/*.html",
   ],
+    loaders: [
+      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
+    ],
   theme: {
     extend: {
       backgroundImage: (theme) => ({

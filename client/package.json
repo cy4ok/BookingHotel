@@ -46,6 +46,8 @@
   },
   "devDependencies": {
     "chokidar": "^3.4.3",
-    "chokidar-cli": "^2.1.0"
+    "chokidar-cli": "^2.1.0",
+    "file-loader": "^6.2.0",
+    "url-loader": "^4.1.1"
   }
 }

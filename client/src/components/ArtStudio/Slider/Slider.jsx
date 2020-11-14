@@ -59,7 +59,7 @@ export default class SimpleSlider extends Component {
       <div>
         <Slider {...settings}>
           {this.state.images.map(({img}) => 
-            <img src={`/img/slider/${img}`} width="100%" alt=""/>
+            <img src={require(`./img/${img}`).default} width="100%" alt=""/>
           )}
         </Slider>
       </div>
