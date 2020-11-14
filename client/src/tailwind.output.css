@@ -21094,9 +21094,9 @@ video {
   box-sizing: border-box;
 }
 
-/* .offer-section {
+.offer-section {
   min-height: 860px;
-} */
+}
 
 .offer-icon {
   top: 7px;

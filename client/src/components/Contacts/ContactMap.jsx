@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
- 
+
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
- 
+
 class ContactMap extends Component {
   static defaultProps = {
     center: {
@@ -13,10 +13,10 @@ class ContactMap extends Component {
     },
     zoom: 10
   };
- 
+
   render() {
     return (
-    
+
       <div style={{ height: '100%', width: '100%' }}>
         <GoogleMapReact
           /* bootstrapURLKeys={{ key: map }} */
@@ -33,6 +33,6 @@ class ContactMap extends Component {
     );
   }
 }
- 
 
-export default ContactMap;
+
+export default ContactMap; 

@@ -21,11 +21,11 @@ const Contact = () => {
                     <div className="map">
                     <ContactMap />
                     </div>
-                
+
             </div>
         </div>
 
     )
 };
 
-export default Contact;
+export default Contact; 
