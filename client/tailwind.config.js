@@ -13,11 +13,13 @@ module.exports = {
       }),
       colors: {
         brown: "#ca9d56",
+        grey: "#393937",
       },
       backgroundColor: (theme) => ({
         primary: "#393937",
         secondary: "#564038",
         third: "#ca9d56",
+        fourth: "#f5f5f5",
       }),
     },
   },
