@@ -11,7 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Header />
     <Offer />
-
+    <Contacts />
   </React.StrictMode>,
   document.getElementById("root")
 );
