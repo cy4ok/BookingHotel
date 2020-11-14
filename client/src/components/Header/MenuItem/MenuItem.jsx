@@ -7,7 +7,7 @@ class MenuItem extends React.Component {
     return (
       <a
         href={url}
-        className="text-white text-lg leading-6 font-medium hover:text-opacity-50 focus:outline-none transition ease-in-out duration-150"
+        className="ml-10 text-white text-lg leading-6 font-medium hover:text-opacity-50 focus:outline-none transition ease-in-out duration-150"
       >
         {name}
       </a>
