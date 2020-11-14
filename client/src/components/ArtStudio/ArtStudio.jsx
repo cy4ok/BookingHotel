@@ -28,6 +28,7 @@ class ArtStudio extends Component {
                 {this.state.linkicon}
                 <span> {this.state.link}</span>
               </a>
+              {/* <img src={require('./Slider/img/11.jpg')} alt="" /> */}
             </div>
           </div>
           <div>

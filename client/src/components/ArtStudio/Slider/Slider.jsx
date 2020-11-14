@@ -39,7 +39,6 @@ export default class SimpleSlider extends Component {
         {
           img: "10.jpg",
         },
-        ,
         {
           img: "11.jpg",
         },
@@ -60,7 +59,7 @@ export default class SimpleSlider extends Component {
       <div>
         <Slider {...settings}>
           {this.state.images.map(({img}) => 
-            <img src={`/img/slider/${img}`} width="100%" />
+            <img src={`/img/slider/${img}`} width="100%" alt=""/>
           )}
         </Slider>
       </div>
