@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Header from "./components/HeaderMain/Header";
-import SectionBg from "./components/HeaderMain/SectionBg";
+import Header from "./components/Header/Header";
 import "./tailwind.output.css";
 import "./index.css";
 import Offer from "./components/Offer";
@@ -13,7 +12,6 @@ import SectionArtStudio from "./components/ArtStudio/ArtStudio";
 ReactDOM.render(
   <React.StrictMode>
     <Header />
-    <SectionBg />
     <Offer />
     <SectionArtStudio />
   </React.StrictMode>,
