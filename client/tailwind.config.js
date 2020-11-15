@@ -6,9 +6,7 @@ module.exports = {
     "src/**/*.tsx",
     "public/**/*.html",
   ],
-    loaders: [
-      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
-    ],
+  loaders: [{ test: /\.(png|jpg)$/, loader: "url-loader?limit=8192" }],
   theme: {
     extend: {
       backgroundImage: (theme) => ({
@@ -18,8 +16,12 @@ module.exports = {
     backgroundColor: (theme) => ({
       primary: "#393937",
       secondary: "#564038",
+      bgBtn: "#ca9d56",
     }),
   },
-  variants: {},
+  variants: {
+    textColor: ["responsive", "hover", "focus", "group-hover"],
+    backgroundColor: ["responsive", "hover", "focus", "active", "group-hover"],
+  },
   plugins: [],
 };

@@ -1,69 +1,59 @@
 import React, { Component } from "react";
 import "./Cards.css";
-// import item from "./Items";
+import Items from "./Items";
 
 class Cards extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cards: [
-        {
-          title: "ARTSTUDIO Nevsky, Superior",
-          guest: "1-3",
-          priceDay: 3000,
-          priceMounth: 50000,
-        },
-        {
-          title: "ARTSTUDIO Nevsky, Deluxe",
-          guest: "1-3",
-          priceDay: 3100,
-          priceMounth: 60000,
-        },
-        {
-          title: "ARTSTUDIO Nevsky, Suite",
-          guest: "1-5",
-          priceDay: 4000,
-          priceMounth: 77419,
-        },
-      ],
+      cards: Items,
     };
   }
 
   render() {
     const cards = this.state.cards;
     return (
-      <div class="grid grid-cards">
+      <div className="flex p-6">
         {cards.map((item) => (
-          <div class="grid__item columnDesktop--4 columnTablet--6 columnMobile--12">
-            <div class="card card-room">
-              <a href="#" class="card__link"></a>
-              <div class="card__photo">
+          <div className="flex-1 text-left px-2 py-1 m-1">
+            <div className="card group relative box-border z-10">
+              <a
+                href="#"
+                className="card__link absolute top-0 left-0 w-full h-full"
+              ></a>
+              <div className="card__photo relative">
                 <img
+                  className="card__img w-full"
                   src="https://bookapart.ru/image/EBbw9nUmaGSXGuBdz7oFpYdayHpx7GP2.jpg/350x275"
                   alt="Deluxe"
                 ></img>
               </div>
-              <div class="card__body">
-                <div class="card__title title--sm">{item.title}</div>
-                <div class="card__info">
-                  <ul class="grid infoList infoList--xs">
-                    <li class="grid__item columnDesktop--4 infoList__item">
-                      <div class="infoList__title colorGray">Гостей</div>
-                      <div class="infoList__subtitle  ">{item.guest}</div>
+              <div className="body pt-5 pb-5">
+                <div className="card__title text-gray-800 group-hover:text-yellow-700 text-left text-2xl">
+                  {item.title}
+                </div>
+                <div className="card__info text-gray-700 mt-5">
+                  <ul className="flex infoList infoList--xs">
+                    <li className="flex-1 grid__item columnDesktop--4 infoList__item">
+                      <div className="text-lg">Гостей</div>
+                      <div className="text-black">{item.guest}</div>
                     </li>
-                    <li class="grid__item columnDesktop--4 infoList__item">
-                      <div class="infoList__title colorGray">За сутки</div>
-                      <div class="infoList__subtitle  ">{`от ${item.priceDay.toLocaleString()} руб.`}</div>
+                    <li className="flex-1 grid__item columnDesktop--4 infoList__item">
+                      <div className="text-lg">За сутки</div>
+                      <div className="text-black">{`от ${item.priceDay.toLocaleString()} руб.`}</div>
                     </li>
-                    <li class="grid__item columnDesktop--4 infoList__item">
-                      <div class="infoList__title colorGray">За месяц</div>
-                      <div class="infoList__subtitle   fontBold">{`от ${item.priceMounth.toLocaleString()} руб.`}</div>
+                    <li className="flex-1 grid__item columnDesktop--4 infoList__item">
+                      <div className="text-lg">За месяц</div>
+                      <div className="text-black font-bold">{`от ${item.priceMounth.toLocaleString()} руб.`}</div>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="card__bottom">
-                <a href="/booking?apartment=DLX&amp;hotel-id=1" class="btn btn-primary">
+              <div className="btn bg-bgBtn hover:bg-orange-500 w-48 h-12 text-white text-center font-bold z-20 absolute bottom-2 left-0">
+                <a
+                  href="/booking?apartment=DLX&amp;hotel-id=1"
+                  className="flex justify-center items-center w-full h-full block box-border"
+                >
                   <span>Бронировать</span>
                 </a>
               </div>
