@@ -34,15 +34,15 @@ class Cards extends Component {
                 </div>
                 <div className="card__info text-gray-700 mt-5">
                   <ul className="flex infoList infoList--xs">
-                    <li className="flex-1 grid__item columnDesktop--4 infoList__item">
+                    <li className="flex-1 grid__item">
                       <div className="text-lg">Гостей</div>
                       <div className="text-black">{item.guest}</div>
                     </li>
-                    <li className="flex-1 grid__item columnDesktop--4 infoList__item">
+                    <li className="flex-1">
                       <div className="text-lg">За сутки</div>
                       <div className="text-black">{`от ${item.priceDay.toLocaleString()} руб.`}</div>
                     </li>
-                    <li className="flex-1 grid__item columnDesktop--4 infoList__item">
+                    <li className="flex-1">
                       <div className="text-lg">За месяц</div>
                       <div className="text-black font-bold">{`от ${item.priceMounth.toLocaleString()} руб.`}</div>
                     </li>
