@@ -6,6 +6,7 @@ import "./tailwind.output.css";
 import Header from "./components/Header/Header";
 import Contacts from "./components/Contacts";
 import MainPage from "./pages/MainPage";
+import ToClients from "./pages/ToClients"
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Route exact path="/" component={MainPage} />
           {/* <Route path="/apartments" component={Apartments} /> */}
           {/* <Route path="/booking" component={Booking} /> */}
-          {/* <Route path="/to-clients" component={ToClients} /> */}
+           <Route path="/to-clients" component={ToClients} /> 
           {/* <Route path="/loyalty" component={Loyalty} /> */}
           {/* <Route path="/restaurant" component={Restaurant} /> */}
           {/* <Route path="/discounts" component={Discounts} /> */}

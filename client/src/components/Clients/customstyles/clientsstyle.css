@@ -1,0 +1,19 @@
+.clients-hero {
+  background-image: url(../img/clients-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.clients-inner {
+  min-height: 620px;
+}
+.clients_sections_list::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  left: 0;
+  top: 12px;
+  background-color: #ca9d56;
+}

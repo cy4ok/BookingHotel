@@ -3,6 +3,7 @@ import CorpOfferItem from "./CorpOfferItem";
 import { corpOfferData } from "./corpOfferData";
 import { ReactComponent as LinkIcon } from "./img/external_link.svg";
 import "./customstyles/CorpStyle.css";
+import { Link } from "react-router-dom";
 
 function CorpOffer() {
   return (
@@ -26,14 +27,14 @@ function CorpOffer() {
               />
             ))}
             <div className="corpoffer-link text-left mt-12 pl-16">
-              <a href="#">
+              <Link to="/to-clients">
                 <span>
                   <LinkIcon className="corpoffer-linicon mr-3 mb-1" />
                 </span>
                 <span className="text-lg text-left text-brown">
                   Предложение для бизнес-клиентов
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
