@@ -4,8 +4,8 @@ import MenuItem from '../MenuItem';
 class Menu extends React.Component {
 
     render() {
-        return(
-            <nav className="md:flex space-x-10">
+        return( //md:hidden
+            <nav className="flex justify-between"> 
                 <MenuItem name="Апарт-отели" url="/apartments"/>
                 <MenuItem name="Бронировать апартаменты" url="/booking"/>
                 <MenuItem name="Корпоративным клиентам" url="/to-clients"/>

@@ -1,11 +1,10 @@
 import React from 'react';
-import Logo from './Logo';
-import Menu from './Menu';
-import ShowButton from './ShowButton/ShowButton';
-import SlideMenu from './SlideMenu';
-import SectionBg from './SectionBg';
+import Logo from '../Header/Logo';
+import Menu from '../Header/Menu';
+import ShowButton from '../Header/ShowButton/ShowButton';
+import SlideMenu from '../Header/SlideMenu';
 
-class Header extends React.Component {
+class HeaderBrown extends React.Component {
 
     constructor(props) {
         super(props);
@@ -23,8 +22,8 @@ class Header extends React.Component {
 
     render() {
         return(
-        <div className="container relative header-section">
-            <header className="z-10 absolute top-0 left-0 w-screen bg-transparent">
+        <div className="container relative h-24">
+            <header className="z-10 absolute top-0 left-0 w-screen bg-secondary">
                 <div className="max-w-full mx-auto px-4">
                     <div className="flex justify-between items-center py-8">
                         <Logo/>
@@ -36,10 +35,9 @@ class Header extends React.Component {
                     </div>
                 </div>
             </header>
-            <SectionBg/>
         </div>
         );
     }
 }
 
-export default Header;
+export default HeaderBrown;
