@@ -10,6 +10,10 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         "offer-photo": "url('components/Offer/images/offer-photo.jpg')",
+        "discounts-bg-1":
+          "url('components/Discounts/images/discounts-bg-1.jpg')",
+        "discounts-bg-2":
+          "url('components/Discounts/images/discounts-bg-2.jpg')",
       }),
       colors: {
         brown: "#ca9d56",
@@ -21,6 +25,9 @@ module.exports = {
         third: "#ca9d56",
         fourth: "#f5f5f5",
       }),
+      textOpacity: {
+        60: "0.6",
+      },
     },
   },
   variants: {},
