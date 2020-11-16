@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // no need to import it again elsewhere.
 import "./tailwind.output.css";
 import Header from "./components/Header/Header";
-import Contacts from "./components/Contacts";
+//import Contacts from "./components/Contacts";
 import MainPage from "./pages/MainPage";
 
 function App() {
