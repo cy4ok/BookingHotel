@@ -5,7 +5,7 @@ class Loyalty extends React.Component {
     render() {
         return(
         <div>   
-            <div className="container bg-secondary">
+            <div className="container ">
                 <h1 className="text-white text-5xl py-12 pb-20">Программа лояльности</h1>
             </div>
             <div className="container bg-fourth">
