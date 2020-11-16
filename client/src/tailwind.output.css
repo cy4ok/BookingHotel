@@ -23153,7 +23153,7 @@ video {
 }
 
 .headerBrown-section {
-  height: 330px;
+  height: 103px;
 }
 
 .offer-icon {
@@ -23170,6 +23170,14 @@ video {
 
 .discounts-photo {
   height: 761px;
+}
+
+#MainPage .SectionBg {
+  background-image: url(./components/Header/img/bg-2.jpg);
+}
+
+#ToClientsPage header {
+  background-color: brown;
 }
 
 @media (min-width: 640px) {

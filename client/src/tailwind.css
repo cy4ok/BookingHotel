@@ -17,7 +17,7 @@
 }
 
 .headerBrown-section {
-  height: 330px;
+  height: 103px;
 }
 
 .offer-icon {
@@ -33,4 +33,12 @@
 
 .discounts-photo {
   height: 761px;
+}
+
+
+#MainPage .SectionBg {
+  background-image: url(./components/Header/img/bg-2.jpg);
+}
+#ToClientsPage header {
+  background-color: brown;
 }
