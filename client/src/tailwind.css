@@ -16,6 +16,10 @@
   height: 620px;
 }
 
+.headerBrown-section {
+  height: 330px;
+}
+
 .offer-icon {
   top: 7px;
 }
@@ -27,7 +31,7 @@
   height: 800px;
 }
 
-.bg-orange-400 {
-  background-color: #f6ad55;
+.discounts-photo {
+  height: 761px;
 }
 
