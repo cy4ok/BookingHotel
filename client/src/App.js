@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./tailwind.output.css";
 import Contacts from "./components/Contacts";
 import MainPage from "./pages/MainPage";
+import ToClients from "./pages/ToClients"
 import DiscountsPage from "./pages/DiscountsPage";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           <Route exact path="/" component={MainPage} />
           {/* <Route path="/apartments" component={Apartments} /> */}
           {/* <Route path="/booking" component={Booking} /> */}
-          {/* <Route path="/to-clients" component={ToClients} /> */}
+           <Route path="/to-clients" component={ToClients} /> 
           {/* <Route path="/loyalty" component={Loyalty} /> */}
           {/* <Route path="/restaurant" component={Restaurant} /> */}
           <Route path="/discounts" component={DiscountsPage} />
