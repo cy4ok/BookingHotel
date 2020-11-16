@@ -3,15 +3,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // This one import will make Tailwind’s utility classes available to the entire app,
 // no need to import it again elsewhere.
 import "./tailwind.output.css";
-import Header from "./components/Header/Header";
-//import Contacts from "./components/Contacts";
+import Contacts from "./components/Contacts";
 import MainPage from "./pages/MainPage";
+import DiscountsPage from "./pages/DiscountsPage";
 
 function App() {
   return (
     <React.StrictMode>
       <Router>
-        <Header />
         <Switch>
           <Route exact path="/" component={MainPage} />
           {/* <Route path="/apartments" component={Apartments} /> */}
@@ -19,10 +18,11 @@ function App() {
           {/* <Route path="/to-clients" component={ToClients} /> */}
           {/* <Route path="/loyalty" component={Loyalty} /> */}
           {/* <Route path="/restaurant" component={Restaurant} /> */}
-          {/* <Route path="/discounts" component={Discounts} /> */}
+          <Route path="/discounts" component={DiscountsPage} />
           {/* <Route path="/about" component={About} /> */}
           <Route exact path="/contacts" component={Contacts} />
         </Switch>
+        {/* <Footer /> */}
       </Router>
     </React.StrictMode>
   );

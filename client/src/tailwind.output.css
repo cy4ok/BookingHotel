@@ -3659,6 +3659,14 @@ video {
   background-image: url('components/Offer/images/offer-photo.jpg');
 }
 
+.bg-discounts-bg-1 {
+  background-image: url('components/Discounts/images/discounts-bg-1.jpg');
+}
+
+.bg-discounts-bg-2 {
+  background-image: url('components/Discounts/images/discounts-bg-2.jpg');
+}
+
 .from-transparent {
   --gradient-from-color: transparent;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -19655,6 +19663,10 @@ video {
   --text-opacity: 0.5;
 }
 
+.text-opacity-60 {
+  --text-opacity: 0.6;
+}
+
 .text-opacity-75 {
   --text-opacity: 0.75;
 }
@@ -19675,6 +19687,10 @@ video {
   --text-opacity: 0.5;
 }
 
+.hover\:text-opacity-60:hover {
+  --text-opacity: 0.6;
+}
+
 .hover\:text-opacity-75:hover {
   --text-opacity: 0.75;
 }
@@ -19693,6 +19709,10 @@ video {
 
 .focus\:text-opacity-50:focus {
   --text-opacity: 0.5;
+}
+
+.focus\:text-opacity-60:focus {
+  --text-opacity: 0.6;
 }
 
 .focus\:text-opacity-75:focus {
@@ -23148,6 +23168,10 @@ video {
   height: 800px;
 }
 
+.discounts-photo {
+  height: 761px;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -26216,6 +26240,14 @@ video {
 
   .sm\:bg-offer-photo {
     background-image: url('components/Offer/images/offer-photo.jpg');
+  }
+
+  .sm\:bg-discounts-bg-1 {
+    background-image: url('components/Discounts/images/discounts-bg-1.jpg');
+  }
+
+  .sm\:bg-discounts-bg-2 {
+    background-image: url('components/Discounts/images/discounts-bg-2.jpg');
   }
 
   .sm\:from-transparent {
@@ -42214,6 +42246,10 @@ video {
     --text-opacity: 0.5;
   }
 
+  .sm\:text-opacity-60 {
+    --text-opacity: 0.6;
+  }
+
   .sm\:text-opacity-75 {
     --text-opacity: 0.75;
   }
@@ -42234,6 +42270,10 @@ video {
     --text-opacity: 0.5;
   }
 
+  .sm\:hover\:text-opacity-60:hover {
+    --text-opacity: 0.6;
+  }
+
   .sm\:hover\:text-opacity-75:hover {
     --text-opacity: 0.75;
   }
@@ -42252,6 +42292,10 @@ video {
 
   .sm\:focus\:text-opacity-50:focus {
     --text-opacity: 0.5;
+  }
+
+  .sm\:focus\:text-opacity-60:focus {
+    --text-opacity: 0.6;
   }
 
   .sm\:focus\:text-opacity-75:focus {
@@ -48717,6 +48761,14 @@ video {
 
   .md\:bg-offer-photo {
     background-image: url('components/Offer/images/offer-photo.jpg');
+  }
+
+  .md\:bg-discounts-bg-1 {
+    background-image: url('components/Discounts/images/discounts-bg-1.jpg');
+  }
+
+  .md\:bg-discounts-bg-2 {
+    background-image: url('components/Discounts/images/discounts-bg-2.jpg');
   }
 
   .md\:from-transparent {
@@ -64715,6 +64767,10 @@ video {
     --text-opacity: 0.5;
   }
 
+  .md\:text-opacity-60 {
+    --text-opacity: 0.6;
+  }
+
   .md\:text-opacity-75 {
     --text-opacity: 0.75;
   }
@@ -64735,6 +64791,10 @@ video {
     --text-opacity: 0.5;
   }
 
+  .md\:hover\:text-opacity-60:hover {
+    --text-opacity: 0.6;
+  }
+
   .md\:hover\:text-opacity-75:hover {
     --text-opacity: 0.75;
   }
@@ -64753,6 +64813,10 @@ video {
 
   .md\:focus\:text-opacity-50:focus {
     --text-opacity: 0.5;
+  }
+
+  .md\:focus\:text-opacity-60:focus {
+    --text-opacity: 0.6;
   }
 
   .md\:focus\:text-opacity-75:focus {
@@ -71218,6 +71282,14 @@ video {
 
   .lg\:bg-offer-photo {
     background-image: url('components/Offer/images/offer-photo.jpg');
+  }
+
+  .lg\:bg-discounts-bg-1 {
+    background-image: url('components/Discounts/images/discounts-bg-1.jpg');
+  }
+
+  .lg\:bg-discounts-bg-2 {
+    background-image: url('components/Discounts/images/discounts-bg-2.jpg');
   }
 
   .lg\:from-transparent {
@@ -87216,6 +87288,10 @@ video {
     --text-opacity: 0.5;
   }
 
+  .lg\:text-opacity-60 {
+    --text-opacity: 0.6;
+  }
+
   .lg\:text-opacity-75 {
     --text-opacity: 0.75;
   }
@@ -87236,6 +87312,10 @@ video {
     --text-opacity: 0.5;
   }
 
+  .lg\:hover\:text-opacity-60:hover {
+    --text-opacity: 0.6;
+  }
+
   .lg\:hover\:text-opacity-75:hover {
     --text-opacity: 0.75;
   }
@@ -87254,6 +87334,10 @@ video {
 
   .lg\:focus\:text-opacity-50:focus {
     --text-opacity: 0.5;
+  }
+
+  .lg\:focus\:text-opacity-60:focus {
+    --text-opacity: 0.6;
   }
 
   .lg\:focus\:text-opacity-75:focus {
@@ -93719,6 +93803,14 @@ video {
 
   .xl\:bg-offer-photo {
     background-image: url('components/Offer/images/offer-photo.jpg');
+  }
+
+  .xl\:bg-discounts-bg-1 {
+    background-image: url('components/Discounts/images/discounts-bg-1.jpg');
+  }
+
+  .xl\:bg-discounts-bg-2 {
+    background-image: url('components/Discounts/images/discounts-bg-2.jpg');
   }
 
   .xl\:from-transparent {
@@ -109717,6 +109809,10 @@ video {
     --text-opacity: 0.5;
   }
 
+  .xl\:text-opacity-60 {
+    --text-opacity: 0.6;
+  }
+
   .xl\:text-opacity-75 {
     --text-opacity: 0.75;
   }
@@ -109737,6 +109833,10 @@ video {
     --text-opacity: 0.5;
   }
 
+  .xl\:hover\:text-opacity-60:hover {
+    --text-opacity: 0.6;
+  }
+
   .xl\:hover\:text-opacity-75:hover {
     --text-opacity: 0.75;
   }
@@ -109755,6 +109855,10 @@ video {
 
   .xl\:focus\:text-opacity-50:focus {
     --text-opacity: 0.5;
+  }
+
+  .xl\:focus\:text-opacity-60:focus {
+    --text-opacity: 0.6;
   }
 
   .xl\:focus\:text-opacity-75:focus {
@@ -113151,4 +113255,3 @@ video {
     animation: bounce 1s infinite;
   }
 }
-
