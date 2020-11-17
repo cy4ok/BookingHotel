@@ -22,7 +22,7 @@ class HeaderBrown extends React.Component {
 
     render() {
         return(
-        <div className="container headerBrown-section bg-secondary">
+        <div className="container bg-secondary">
             <header className="py-8">
                 <div className="flex justify-between items-center">
                     <Logo/>

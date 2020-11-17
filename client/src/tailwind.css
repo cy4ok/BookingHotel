@@ -12,12 +12,8 @@
   box-sizing: border-box;
 }
 
-.header-section {
-  height: 620px;
-}
-
-.headerBrown-section {
-  height: 103px;
+header {
+  height: 117px;
 }
 
 .offer-icon {
@@ -35,10 +31,9 @@
   height: 761px;
 }
 
-
-#MainPage .SectionBg {
+/* #MainPage .SectionBg {
   background-image: url(./components/Header/img/bg-2.jpg);
 }
 #ToClientsPage header {
   background-color: brown;
-}
+} */

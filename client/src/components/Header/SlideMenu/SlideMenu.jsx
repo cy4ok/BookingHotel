@@ -27,7 +27,7 @@ class SlideMenu extends Component {
             <SlideItem name="+7 (812) 561 57 20" />
             <SlideItem name="welcome@bookapart.ru" />
           </div>
-          <div className="px-5 sm:p-3">
+          <div className="px-5">
             <button className="btn--primary py-2 px-5 focus:outline-none">
               Заказать звонок
             </button>

@@ -1,7 +1,8 @@
 import React from 'react'
 import Discounts from '../components/Discounts'
 import HeaderBrownTitle from '../components/HeaderBrownTitle';
-import HeaderBrown from '../components/HeaderBrown'
+import HeaderBrown from '../components/HeaderBrown';
+import Footer from "../components/Footer"
 
 const DiscountsPage = () => {
     return (
@@ -9,6 +10,7 @@ const DiscountsPage = () => {
         <HeaderBrown />
         <HeaderBrownTitle title="Акции" />
         <Discounts />
+        <Footer />
         </>
     )
 }
