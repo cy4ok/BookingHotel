@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import IconGPS from "../../images/icons/IconGPS";
 import "./ArtStudio.css";
 import Slider from "./Slider/Slider";
-import Cards from "./Cards";
+import Cards from "./Cards/Cards";
+// import Card from "./Card/Card";
 import Modal from "./Modal/Modal";
 
 class ArtStudio extends Component {
@@ -19,7 +20,8 @@ class ArtStudio extends Component {
     this.toggleModal = this.toggleModal.bind(this);
   }
 
-  toggleModal() {
+  toggleModal(e) {
+    e.preventDefault();
     this.setState({
       visible: !this.state.visible,
     });
@@ -42,10 +44,7 @@ class ArtStudio extends Component {
           <div>
             <Slider />
           </div>
-          <Cards
-            handleClick={this.toggleModal}
-            visibility={this.state.visible}
-          />
+          <Cards handleClick={this.toggleModal} visibility={this.state.visible}/>
           <Modal
             handleClick={this.toggleModal}
             visibility={this.state.visible}

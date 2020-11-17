@@ -6,7 +6,6 @@
     float: right;
     margin-right: 30px;
     margin-top: 30px;
-    z-index: 205;
 }
 
 .btn--close:before,
@@ -15,7 +14,8 @@
     position: absolute;
     width: 22px;
     height: 4px;
-    background: #ffffff;
+    background: #ca9d56;
+    z-index: 205;
 }
 
 .btn--close:before {

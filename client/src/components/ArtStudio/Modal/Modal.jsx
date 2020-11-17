@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Cards from "../Cards/Items";
+import Card from "../Card/Card";
 import HideButton from "../HideButton/HideButton";
 import "./Modal.css";
 
@@ -12,9 +12,7 @@ class Modal extends Component {
   }
 
   render() {
-    const card = Cards;
-
-    console.log(this.props.visibility);
+    console.log(this.props);
 
     return (
       <div className={this.props.visibility ? "show" : "hide"}>
