@@ -1,0 +1,12 @@
+.advantages-img {
+    background-image: url(../img/advantages-photo.jpg);
+    height: 800px;
+  }
+  
+  .advantages-linicon {
+    display: inline;
+    
+  }
+  .advantages-link:hover {
+    opacity: 0.8;
+  }
