@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class SlideItem extends React.Component {
 
@@ -7,9 +8,9 @@ class SlideItem extends React.Component {
         const url = this.props.url
         return(
             <p className="space-y-1 leading-6 font-medium p-2 space-x-4 transition ease-in-out duration-150">
-                <a href={url} className="slide-menu-link ">
+                <Link to={`${url}`} className="slide-menu-link ">
                     {name}
-                </a>
+                </Link>
             </p>
         );
     }

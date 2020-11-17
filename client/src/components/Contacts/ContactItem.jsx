@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const ContactItem = () => {
     return (
         <div className="mx-12 my-20">
@@ -59,7 +58,7 @@ const ContactItem = () => {
                 </div>
             </div>
         </div>
-    );
-};
 
-export default ContactItem; 
+    )
+}
+export default ContactItem;

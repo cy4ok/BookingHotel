@@ -16,6 +16,10 @@
   height: 620px;
 }
 
+.headerBrown-section {
+  height: 330px;
+}
+
 .offer-icon {
   top: 7px;
 }
@@ -25,5 +29,9 @@
 }
 .offer-photo {
   height: 800px;
+}
+
+.discounts-photo {
+  height: 761px;
 }
 

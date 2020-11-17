@@ -4,7 +4,7 @@ import ContactItem from "./ContactItem.jsx";
 
 
 
-const Contact = () => {
+const Contacts = () => {
     return (
         <div className="offer-section">
             <div className="pt-20 flex flex-row">
@@ -20,4 +20,4 @@ const Contact = () => {
     )
 };
 
-export default Contact; 
+export default Contacts;
