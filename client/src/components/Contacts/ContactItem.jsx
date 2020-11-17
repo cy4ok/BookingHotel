@@ -58,7 +58,6 @@ const ContactItem = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 export default ContactItem;
