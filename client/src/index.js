@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import "./tailwind.output.css";
 import "./index.css";
 import Offer from "./components/Offer";
+import Contacts from "./components/Contacts";
 import SectionArtStudio from "./components/ArtStudio/ArtStudio";
 
 
