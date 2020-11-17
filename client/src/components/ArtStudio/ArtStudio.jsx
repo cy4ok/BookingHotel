@@ -17,14 +17,14 @@ class ArtStudio extends Component {
       link: "Санкт-Петербург, 2-я Советская улица, 4",
       linkicon: <IconGPS />,
     };
-    this.toggleModal = this.toggleModal.bind(this);
-  }
+  //   this.toggleModal = this.toggleModal.bind(this);
+  // }
 
-  toggleModal(e) {
-    e.preventDefault();
-    this.setState({
-      visible: !this.state.visible,
-    });
+  // toggleModal(e) {
+  //   e.preventDefault();
+  //   this.setState({
+  //     visible: !this.state.visible,
+  //   });
   }
 
   render() {
@@ -44,11 +44,8 @@ class ArtStudio extends Component {
           <div>
             <Slider />
           </div>
-          <Cards handleClick={this.toggleModal} visibility={this.state.visible}/>
-          <Modal
-            handleClick={this.toggleModal}
-            visibility={this.state.visible}
-          />
+          <Cards />
+          
         </div>
       </div>
     );

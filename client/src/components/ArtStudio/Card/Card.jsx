@@ -1,13 +1,26 @@
 import React, { Component } from "react";
+import Modal from "../Modal/Modal";
+
+import "./Card.css";
 
 class Card extends Component {
-  state = { 
-    item: this.props.item,
-   }
+  constructor(props) {
+    super(props);
+    this.state = {
+      item: this.props.item,
+    };
+  this.toggleModal = this.toggleModal.bind(this);
+  }
+
+  toggleModal() {
+    this.setState({
+      visible: !this.state.visible,
+    });
+  }
+
   render() {
-    console.log(this.props.handleClick);
     return (
-      <div className="flex-1 text-left px-2 py-1 m-1">
+      <div className="flex-1 text-left px-2 py-1 m-1" key={this.props.item.id}>
         <div className="card group relative box-border z-10">
           <div className="card__photo relative">
             <img
@@ -18,8 +31,8 @@ class Card extends Component {
           </div>
           <div
             className="body pt-5 pb-5"
-            onClick={(e) => {
-              this.props.handleClick(e);
+            onClick={() => {
+              this.toggleModal();
             }}
           >
             <div className="card__title text-gray-800 group-hover:text-yellow-700 text-left text-2xl">
@@ -51,6 +64,7 @@ class Card extends Component {
             </a>
           </div>
         </div>
+        <Modal handleClick={this.toggleModal} visibility={this.state.visible} item={this.state.item} />
       </div>
     );
   }

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Cards.css";
 import Items from "./Items";
 import Card from "../Card/Card";
 
@@ -19,6 +18,7 @@ class Cards extends Component {
         <div className="flex p-6">
           {cards.map((item) => (
             <Card
+              key={item.id}
               item={item}
               handleClick={this.props.handleClick}
               visibility={this.state.visible}
