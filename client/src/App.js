@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // no need to import it again elsewhere.
 import "./tailwind.output.css";
 import Contacts from "./components/Contacts";
+import Apartments from "./components/Apartments";
 import MainPage from "./pages/MainPage";
 import DiscountsPage from "./pages/DiscountsPage";
 
@@ -13,7 +14,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={MainPage} />
-          {/* <Route path="/apartments" component={Apartments} /> */}
+          <Route path="/apartments" component={Apartments} />
           {/* <Route path="/booking" component={Booking} /> */}
           {/* <Route path="/to-clients" component={ToClients} /> */}
           {/* <Route path="/loyalty" component={Loyalty} /> */}

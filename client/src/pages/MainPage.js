@@ -1,4 +1,5 @@
 import React from "react";
+import Apartments from "../components/Apartments";
 import ArtStudio from "../components/ArtStudio";
 import Discounts from "../components/Discounts";
 import Header from "../components/Header/Header";
@@ -10,6 +11,7 @@ const MainPage = () => {
       <Header />
       <Offer />
       <ArtStudio />
+      {/* <Apartments title="Апартементы и планировки" /> */}
       <Discounts title="Текущие акции" />
     </>
   );
