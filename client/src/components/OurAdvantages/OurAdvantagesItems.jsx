@@ -3,7 +3,7 @@ import IconSign from "../../images/icons/IconSign";
 import IconBag from "../../images/icons/IconBag";
 import IconGPS from "../../images/icons/IconGPS";
 
-export const offerItems = [
+export const OurAdvantagesItems = [
   {
     icon: <IconSign />,
     title: "Дом вдали от дома",
