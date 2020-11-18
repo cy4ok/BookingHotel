@@ -18,6 +18,7 @@ class SlideMenu extends Component {
             <SlideItem name="Бронировать апартаменты" url="/booking" />
             <SlideItem name="Корпоративным клиентам" url="/to-clients" />
             <SlideItem name="Программа лояльности" url="/loyalty" />
+            <SlideItem name="Офисы в аренду" url="/" />
             <SlideItem name="Ресторан ATLAS BISTRO" url="/restaurant" />
             <SlideItem name="Акции" url="/discounts" />
             <SlideItem name="О RBI PM" url="/about" />
@@ -27,7 +28,7 @@ class SlideMenu extends Component {
             <SlideItem name="+7 (812) 561 57 20" />
             <SlideItem name="welcome@bookapart.ru" />
           </div>
-          <div className="px-5 sm:p-3">
+          <div className="px-5">
             <button className="btn--primary py-2 px-5 focus:outline-none">
               Заказать звонок
             </button>
