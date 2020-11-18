@@ -11,7 +11,7 @@ const MainPage = () => {
   return (
     <div id="MainPage">
       <Header />
-      <SectionBg/>
+      <SectionBg smalltitle="Дом вдали от дома" maintitle="ARTSTUDIO - апарт-отель в" city="Санкт-Петербурге"/>
       <Offer />
       <ArtStudio />
       <CorpOffer/>

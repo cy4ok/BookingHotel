@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from './Logo';
 import Menu from './Menu';
-import ShowButton from './ShowButton/ShowButton';
+import ShowButton from './ShowButton';
 import SlideMenu from './SlideMenu';
 
 class Header extends React.Component {
@@ -21,7 +21,7 @@ class Header extends React.Component {
     }
 
     render() {
-        return(
+        return( //<div className={`container ${title ? "bg-secondary" : "bg-transparent"}`}>
         <div className="container">
             <header className="z-10 absolute top-0 left-0 w-full py-8">
                 <div className="flex justify-between items-center px-10">

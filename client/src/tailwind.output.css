@@ -22188,10 +22188,6 @@ video {
   box-sizing: border-box;
 }
 
-header {
-  height: 117px;
-}
-
 .offer-icon {
   top: 7px;
 }
@@ -22208,12 +22204,31 @@ header {
   height: 761px;
 }
 
-/* #MainPage .SectionBg {
+header {
+  height: 120px;
+  background-color: #564038;
+}
+
+#MainPage .SectionBg {
+  background-image: url(./components/Header/img/bg-1.jpg);
+}
+
+#ApartmentsPage .SectionBg {
   background-image: url(./components/Header/img/bg-2.jpg);
 }
-#ToClientsPage header {
-  background-color: brown;
-} */
+
+#MainPage header, #ApartmentsPage header, #ToClientsPage header {
+  background-color: transparent;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+#ApartmentsPage .smalltitle {
+  text-transform: lowercase;
+}
+
+#ApartmentsPage .city {
+  font-size: 18px;
+}
 
 @media (min-width: 640px) {
   .sm\:container {
