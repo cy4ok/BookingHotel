@@ -1,11 +1,11 @@
 import React from 'react';
 import SlideItem from '../Header/SlideItem';
-//import MyComponent from './MyComponent';
+//import AwesomeIcon from './AwesomeIcon';
 
 class Footer extends React.Component {
 
     render() {
-        return(  //ссылки сделать
+        return(  
         <div className="container bg-primary">
             <div className="flex justify-between pt-12 pb-8">
 
@@ -18,12 +18,11 @@ class Footer extends React.Component {
                         <button className="btn--primary py-2 px-5 focus:outline-none">
                         Заказать звонок
                         </button>
-                    </div>
-                
-                    <div className="p-2 btn--social ">
-                        sociality
-                        {/* <MyComponent /> */}
-                    
+                    </div>           
+                    <div className="p-2 btn--social text-smoke ">                   
+                        social     
+                        {/* <AwesomeIcon /> */}
+
                     </div>
                     <span className="text-smoke text-lg uppercase p-2">2020 &copy; Artstudio</span>
                 </div>
