@@ -9,7 +9,7 @@ class Card extends Component {
     this.state = {
       item: this.props.item,
     };
-  this.toggleModal = this.toggleModal.bind(this);
+    this.toggleModal = this.toggleModal.bind(this);
   }
 
   toggleModal() {
@@ -54,17 +54,21 @@ class Card extends Component {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="btn bg-bgBtn hover:bg-orange-500 w-48 h-12 text-white text-center font-bold z-20 absolute bottom-2 left-0">
-            <a
-              href="/booking?apartment=DLX&amp;hotel-id=1"
-              className="flex justify-center items-center w-full h-full block box-border"
-            >
-              <span>Бронировать</span>
-            </a>
+            <div className="btn bg-bgBtn hover:bg-orange-500 w-48 h-12  mt-12 text-white text-center font-bold z-20 absolute bottom-2 left-0">
+              <a
+                href="/booking?apartment=DLX&amp;hotel-id=1"
+                className="flex justify-center items-center w-full h-full block box-border"
+              >
+                <span>Бронировать</span>
+              </a>
+            </div>
           </div>
         </div>
-        <Modal handleClick={this.toggleModal} visibility={this.state.visible} item={this.state.item} />
+        <Modal
+          handleClick={this.toggleModal}
+          visibility={this.state.visible}
+          item={this.state.item}
+        />
       </div>
     );
   }

@@ -15,13 +15,13 @@ class Cards extends Component {
   
     return (
       <>
-        <div className="flex p-6">
-          {cards.map((item) => (
+        <div className="flex pt-20">
+          {cards.map((item,index) => (
             <Card
-              key={item.id}
               item={item}
               handleClick={this.props.handleClick}
               visibility={this.state.visible}
+              key={item.id}
             />
           ))}
         </div>

@@ -4,7 +4,7 @@ import "./ArtStudio.css";
 import Slider from "./Slider/Slider";
 import Cards from "./Cards/Cards";
 // import Card from "./Card/Card";
-import Modal from "./Modal/Modal";
+// import Modal from "./Modal/Modal";
 
 class ArtStudio extends Component {
   constructor(props) {
@@ -35,7 +35,7 @@ class ArtStudio extends Component {
             <div className="flex-initial title-h1">{this.state.title}</div>
             <div className="flex-initial text">
               {this.state.text}
-              <a href="/contacts" class="btn btn-iconText">
+              <a href="/contacts" className="btn btn-iconText">
                 {this.state.linkicon}
                 <span> {this.state.link}</span>
               </a>
@@ -45,7 +45,6 @@ class ArtStudio extends Component {
             <Slider />
           </div>
           <Cards />
-          
         </div>
       </div>
     );

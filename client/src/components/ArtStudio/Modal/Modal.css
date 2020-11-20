@@ -15,8 +15,8 @@
   background-color: #fff;
 }
 
-body.modal {
-  overflow: hidden;
+body {
+  overflow: auto;
 }
 
 .show {
@@ -25,4 +25,18 @@ body.modal {
 
 .hide {
   display: none;
+}
+
+.wrp {
+  overflow-y: scroll;
+  width: 500px;
+}
+.modal-line {
+  height: 1px;
+  background-color: #eee;
+}
+
+.modal-btn {
+  width: 500px;
+  box-shadow: 0px 1px 40px -5px rgba(0, 0, 0, 0.5);
 }
