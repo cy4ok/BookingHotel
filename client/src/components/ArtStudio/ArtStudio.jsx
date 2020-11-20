@@ -3,18 +3,26 @@ import IconGPS from "../../images/icons/IconGPS";
 import "./ArtStudio.css";
 import Slider from "./Slider/Slider";
 import Cards from "./Cards/Cards";
-import Img from "./Slider/img/11.jpg";
 
 class ArtStudio extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      visible: false,
       title: "ARTSTUDIO Nevsky",
       text:
         "Комфортные апартаменты в центре города для любителей романтики, творческих личностей и бизнес-туристов.",
       link: "Санкт-Петербург, 2-я Советская улица, 4",
       linkicon: <IconGPS />,
     };
+  //   this.toggleModal = this.toggleModal.bind(this);
+  // }
+
+  // toggleModal(e) {
+  //   e.preventDefault();
+  //   this.setState({
+  //     visible: !this.state.visible,
+  //   });
   }
 
   render() {
@@ -25,7 +33,7 @@ class ArtStudio extends Component {
             <div className="flex-initial title-h1">{this.state.title}</div>
             <div className="flex-initial text">
               {this.state.text}
-              <a href="/contacts" class="btn btn-iconText">
+              <a href="/contacts" className="btn btn-iconText">
                 {this.state.linkicon}
                 <span> {this.state.link}</span>
               </a>
