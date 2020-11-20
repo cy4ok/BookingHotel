@@ -1,0 +1,14 @@
+.bistro{
+    width: 610px;
+    height: 312px;
+    background-image: url(../img/bistro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parking{
+    width: 610px;
+    height: 312px;
+    background-image: url(../img/parking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
