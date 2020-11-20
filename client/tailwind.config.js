@@ -19,6 +19,7 @@ module.exports = {
       colors: {
         brown: "#ca9d56",
         grey: "#393937",
+        smoke: "#FFFFFF99",
       },
       backgroundColor: (theme) => ({
         primary: "#393937",
