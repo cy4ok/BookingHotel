@@ -4,23 +4,4 @@
     height: 35px;
     border-radius: 100%;
     border: 1px solid #ca9d56;
-    position: relative;
-}
-
-.social-icons {
-    position: absolute;
-    top: 9px;
-}
-
-.icon-vk {
-    left: 7px;
-}
-
-.icon-fb {
-    left: 11px;
-}
-
-.icon-inst {
-    
-    left: 10px;
 }
