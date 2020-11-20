@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Slider.css";
 
-export default class SimpleSlider extends Component {
+class SimpleSlider extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -54,15 +54,18 @@ export default class SimpleSlider extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
+      key: true,
     };
     return (
       <div>
         <Slider {...settings}>
-          {this.state.images.map(({img}) => 
-            <img src={require(`./img/${img}`).default} width="100%" alt=""/>
+          {this.state.images.map(({img, index}) => 
+            <img src={require(`./img/${img}`).default} width="100%" key={index} alt=""/>
           )}
         </Slider>
       </div>
     );
   }
 }
+
+export default SimpleSlider;
