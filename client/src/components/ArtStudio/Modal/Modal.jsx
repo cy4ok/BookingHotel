@@ -22,7 +22,7 @@ class Modal extends Component {
               <div className="card__photo relative">
                 <img
                   className="card__img w-full"
-                  src="https://bookapart.ru/image/EBbw9nUmaGSXGuBdz7oFpYdayHpx7GP2.jpg/350x275"
+                  src={require(`../Card/img/${this.props.item.images[0]}`).default}
                   alt="Deluxe"
                 ></img>
               </div>
