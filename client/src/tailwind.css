@@ -36,13 +36,22 @@
 
 header {
   height: 120px;
-  background-color: #564038;
+}
+.maintitle, .city {
+  font-size: 54px;
+  line-height: 56px;
 }
 #MainPage .SectionBg {
   background-image: url(./components/Header/img/bg-1.jpg);
+  height: 620px;
 }
 #ApartmentsPage .SectionBg {
   background-image: url(./components/Header/img/bg-2.jpg);
+  height: 620px;
+}
+#ToClientsPage .SectionBg {
+  background-image: url(./components/Header/img/bg-3.jpg);
+  height: 620px;
 }
 #MainPage header,
 #ApartmentsPage header,
