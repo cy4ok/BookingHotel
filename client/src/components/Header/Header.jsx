@@ -1,9 +1,9 @@
 import React from 'react';
-import Logo from '../Logo';
-import Menu from '../Menu';
-import ShowButton from '../ShowButton/ShowButton';
-import SlideMenu from '../SlideMenu';
-import SectionBg from '../SectionBg';
+import Logo from './Logo';
+import Menu from './Menu';
+import ShowButton from './ShowButton/ShowButton';
+import SlideMenu from './SlideMenu';
+import SectionBg from './SectionBg';
 
 class Header extends React.Component {
 
@@ -25,8 +25,8 @@ class Header extends React.Component {
         return(
         <div className="container relative header-section">
             <header className="z-10 absolute top-0 left-0 w-screen bg-transparent">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                    <div className="flex justify-between items-center py-8 md:justify-start md:space-x-10">
+                <div className="max-w-full mx-auto px-4">
+                    <div className="flex justify-between items-center py-8">
                         <Logo/>
                         <Menu/>
                         <ShowButton handleClick={this.toggleMenu} />
