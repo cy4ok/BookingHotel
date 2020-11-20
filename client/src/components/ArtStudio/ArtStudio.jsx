@@ -3,8 +3,6 @@ import IconGPS from "../../images/icons/IconGPS";
 import "./ArtStudio.css";
 import Slider from "./Slider/Slider";
 import Cards from "./Cards/Cards";
-// import Card from "./Card/Card";
-// import Modal from "./Modal/Modal";
 
 class ArtStudio extends Component {
   constructor(props) {

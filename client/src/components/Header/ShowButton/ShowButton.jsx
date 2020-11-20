@@ -4,7 +4,7 @@ import "./ShowButton.css";
 class ShowButton extends Component {
   render() {
     return (
-      <div className="flex justify-end md:flex-1 lg:w-0">
+      <div className="flex justify-end flex-1">
         <button
           id="show-button"
           onClick={this.props.handleClick}
