@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import IconGPS from "../../images/icons/IconGPS";
 import "./ArtStudio.css";
 import Slider from "./Slider/Slider";
@@ -15,28 +16,20 @@ class ArtStudio extends Component {
       link: "Санкт-Петербург, 2-я Советская улица, 4",
       linkicon: <IconGPS />,
     };
-  //   this.toggleModal = this.toggleModal.bind(this);
-  // }
-
-  // toggleModal(e) {
-  //   e.preventDefault();
-  //   this.setState({
-  //     visible: !this.state.visible,
-  //   });
   }
 
   render() {
     return (
-      <div className="section atrstudio-section">
+      <div className="section atrstudio-section box-border">
         <div className="container">
           <div className="flex bg-white text-black ">
             <div className="flex-initial title-h1">{this.state.title}</div>
             <div className="flex-initial text">
               {this.state.text}
-              <a href="/contacts" className="btn btn-iconText">
+              <Link to="/contacts" className="btn btn-iconText">
                 {this.state.linkicon}
                 <span> {this.state.link}</span>
-              </a>
+              </Link>
             </div>
           </div>
           <div>

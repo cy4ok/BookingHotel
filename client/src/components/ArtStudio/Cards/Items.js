@@ -5,10 +5,11 @@ import Suite from "../Card/img/suite.jpg";
 const Items = [
   {
     id: 1,
-    title: ["ARTSTUDIO Nevsky", "Superior"],
+    title: "ARTSTUDIO Nevsky",
+    typeOfApartment: "Superior",
     area: 35,
     mainImg: Superior,
-    images: [""],
+    images: ["superior.jpg"],
     guest: "1-3",
     priceDay: 3000,
     priceMounth: 50000,
@@ -40,7 +41,8 @@ const Items = [
   },
   {
     id: 2,
-    title: ["ARTSTUDIO Nevsky", "Deluxe"],
+    title: "ARTSTUDIO Nevsky",
+    typeOfApartment: "Deluxe",
     area: 43,
     mainImg: Deluxe,
     images: ["deluxe.jpg"],
@@ -75,7 +77,8 @@ const Items = [
   },
   {
     id: 3,
-    title: ["ARTSTUDIO Nevsky", "Suite"],
+    title: "ARTSTUDIO Nevsky",
+    typeOfApartment: "Suite",
     area: 58,
     mainImg: Suite,
     images: ["suite.jpg"],
