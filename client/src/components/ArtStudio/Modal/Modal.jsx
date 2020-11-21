@@ -19,7 +19,7 @@ class Modal extends Component {
           <HideButton handleClick={this.props.handleClick} />
           <div className="wrp absolute right-0 top-0 h-screen z-50 overflow-y-auto">
             <div className="card group relative box-border z-10">
-              <div className="card__photo relative">{console.log(this.props.item.mainImg)}
+              <div className="card__photo relative">
                 <img
                   className="card__img w-full"
                   src={this.props.item.mainImg}
