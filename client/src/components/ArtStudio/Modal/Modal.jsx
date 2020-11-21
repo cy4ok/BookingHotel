@@ -48,7 +48,7 @@ class Modal extends Component {
                     </li>
                   </ul>
                 </div>
-                <div className="modal-line w-full mt-1"></div>
+                <div className="modal-line w-full mt-1 border-r border-gray-300"></div>
                 <div className="mt-5">
                   <h3 className="uppercase font-bold text-xs leading-6">
                     {this.props.item.type}

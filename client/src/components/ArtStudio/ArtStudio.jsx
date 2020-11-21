@@ -33,10 +33,10 @@ class ArtStudio extends Component {
             <div className="flex-initial title-h1">{this.state.title}</div>
             <div className="flex-initial text">
               {this.state.text}
-              <a href="/contacts" className="btn btn-iconText">
+              <Link to="/contacts" className="btn btn-iconText">
                 {this.state.linkicon}
                 <span> {this.state.link}</span>
-              </a>
+              </Link>
             </div>
           </div>
           <div>

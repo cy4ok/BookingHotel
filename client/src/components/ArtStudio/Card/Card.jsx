@@ -62,12 +62,12 @@ class Card extends Component {
             </div>
           </div>
           <div className="btn bg-bgBtn hover:bg-orange-500 w-48 h-12  mt-12 text-white text-center font-bold z-20 absolute bottom-2 left-0">
-            <a
-              href="/booking"
+            <Link
+              to="/booking"
               className="flex justify-center items-center w-full h-full block box-border"
             >
               <span>Бронировать</span>
-            </a>
+            </Link>
           </div>
         </div>
         <Modal
