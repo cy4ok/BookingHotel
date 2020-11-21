@@ -19,22 +19,19 @@ module.exports = {
       colors: {
         brown: "#ca9d56",
         grey: "#393937",
+        smoke: "#FFFFFF99",
       },
       backgroundColor: (theme) => ({
         primary: "#393937",
         secondary: "#564038",
         third: "#ca9d56",
         fourth: "#f5f5f5",
+        bgBtn: "#ca9d56",
       }),
       textOpacity: {
         60: "0.6",
       },
     },
-    backgroundColor: (theme) => ({
-      primary: "#393937",
-      secondary: "#564038",
-      bgBtn: "#ca9d56",
-    }),
   },
   variants: {
     textColor: ["responsive", "hover", "focus", "group-hover"],

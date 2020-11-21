@@ -23,9 +23,9 @@ class HeaderBrown extends React.Component {
 
     render() {
         return(
-        <div className="container headerBrown-section bg-secondary">
-            <header className="">
-                <div className="flex justify-between items-center py-8">
+        <div className="container bg-secondary">
+            <header className="py-8">
+                <div className="flex justify-between items-center">
                     <Logo/>
                     <Menu/>
                     <ShowButton handleClick={this.toggleMenu} />

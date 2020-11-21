@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactItem = () => {
     return (
-        <div className="mx-12 my-20">
+        <div className="pr-20 contacts-block ml-auto">
             <h1 className="pb-6 uppercase text-2xl">rbi pm</h1>
             <div className="flex flex-row box-border mb-20 justify-between">
                 <div className=" flex-row box-border">
