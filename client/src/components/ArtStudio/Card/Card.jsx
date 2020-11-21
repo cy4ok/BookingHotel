@@ -66,7 +66,7 @@ class Card extends Component {
           </div>
           <div className="btn bg-bgBtn hover:bg-orange-500 w-48 h-12  mt-12 text-white text-center font-bold z-20 relative">
             <Link
-              to="/booking"
+              to="/bookingpage"
               className="flex justify-center items-center w-full h-full block box-border"
             >
               <span>Бронировать</span>
