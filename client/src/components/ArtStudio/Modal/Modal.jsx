@@ -17,7 +17,10 @@ class Modal extends Component {
     return (
       <>
         {this.props.visibility ? (
-          <div className="container relative modal w-full h-screen m-0 p-0">
+          <div
+            className="container relative modal w-full h-screen m-0 p-0"
+            onClick={this.props.handleClick}
+          >
             <HideButton handleClick={this.props.handleClick} />
             <div className="wrp absolute right-0 top-0 h-screen z-50 overflow-y-auto">
               <div className="card group relative box-border z-10">
@@ -75,13 +78,17 @@ class Modal extends Component {
                       <h3 className="uppercase font-bold text-xs leading-6">
                         Курение
                       </h3>
-                      <p className="uppercase text-base">{this.props.item.smoking}</p>
+                      <p className="uppercase text-base">
+                        {this.props.item.smoking}
+                      </p>
                     </div>
                     <div className="flex-1 uppercase leading-10">
                       <h3 className="uppercase font-bold text-xs leading-6">
                         Парковка
                       </h3>
-                      <p className="uppercase text-base">{this.props.item.parking}</p>
+                      <p className="uppercase text-base">
+                        {this.props.item.parking}
+                      </p>
                     </div>
                   </div>
                   <div className="w-full h-16"></div>
@@ -97,9 +104,7 @@ class Modal extends Component {
               </div>
             </div>
           </div>
-        ) : (
-          null
-        )}
+        ) : null}
       </>
     );
   };
