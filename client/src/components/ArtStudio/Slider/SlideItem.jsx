@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import  Items from './Items';
 
 class SlideItem extends Component {
   constructor(props) {
