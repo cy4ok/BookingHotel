@@ -1,9 +1,14 @@
+import Superior from "../Card/img/superior.jpg";
+import Deluxe from "../Card/img/deluxe.jpg";
+import Suite from "../Card/img/suite.jpg";
+
 const Items = [
   {
     id: 1,
     title: ["ARTSTUDIO Nevsky", "Superior"],
     area: 35,
-    images: ["superior.jpg"],
+    mainImg: Superior,
+    images: [""],
     guest: "1-3",
     priceDay: 3000,
     priceMounth: 50000,
@@ -37,6 +42,7 @@ const Items = [
     id: 2,
     title: ["ARTSTUDIO Nevsky", "Deluxe"],
     area: 43,
+    mainImg: Deluxe,
     images: ["deluxe.jpg"],
     guest: "1-3",
     priceDay: 3100,
@@ -71,6 +77,7 @@ const Items = [
     id: 3,
     title: ["ARTSTUDIO Nevsky", "Suite"],
     area: 58,
+    mainImg: Suite,
     images: ["suite.jpg"],
     guest: "1-5",
     priceDay: 4000,
