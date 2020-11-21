@@ -32,10 +32,17 @@ body {
   width: 500px;
 }
 
-/* .modal-line {
+.modal-desc {
+  list-style-type: disc;
+}
+
+.modal-services {
+  list-style-type: disc;
+}
+
+.modal-line {
   height: 1px;
-  background-color: #eee;
-} */
+}
 
 .modal-btn {
   width: 500px;
