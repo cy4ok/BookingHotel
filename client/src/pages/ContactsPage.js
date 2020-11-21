@@ -1,12 +1,12 @@
 import React from "react";
 import Contacts from "../components/Contacts";
 import Footer from "../components/Footer";
-import HeaderBrown from "../components/HeaderBrown";
+import Header from "../components/Header";
 
 const ContactsPage = () => {
   return (
     <>
-      <HeaderBrown />
+      <Header title="Контакты" />
       <Contacts />
       <Footer />
     </>
