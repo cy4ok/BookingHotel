@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Modal from "../Modal/Modal";
 
 import "./Card.css";
@@ -30,7 +31,7 @@ class Card extends Component {
           >
             <img
               className="card__img w-full"
-              src={require(`./img/${this.state.item.images[0]}`).default}
+              src={require(`./img/${this.state.item.mainImg}`).default}
               alt="Deluxe"
             ></img>
           </div>
@@ -41,8 +42,10 @@ class Card extends Component {
             }}
           >
             <div className="card__title text-gray-800 group-hover:text-yellow-700 text-left text-2xl">
-              {`${this.props.item.title[0]} `}
-              <span className="block w-full">{this.props.item.title[1]}</span>
+              {`${this.props.item.title}, `}
+              <span className="block w-full">
+                {this.props.item.typeOfApartment}
+              </span>
             </div>
             <div className="card__info text-gray-700 mt-5">
               <ul className="flex infoList infoList--xs">
@@ -61,7 +64,7 @@ class Card extends Component {
               </ul>
             </div>
           </div>
-          <div className="btn bg-bgBtn hover:bg-orange-500 w-48 h-12  mt-12 text-white text-center font-bold z-20 absolute bottom-2 left-0">
+          <div className="btn bg-bgBtn hover:bg-orange-500 w-48 h-12  mt-12 text-white text-center font-bold z-20 relative">
             <Link
               to="/booking"
               className="flex justify-center items-center w-full h-full block box-border"

@@ -1,8 +1,10 @@
 const Items = [
   {
     id: 1,
-    title: ["ARTSTUDIO Nevsky", "Superior"],
+    title: "ARTSTUDIO Nevsky",
+    typeOfApartment: "Superior",
     area: 35,
+    mainImg: ["superior.jpg"],
     images: ["superior.jpg"],
     guest: "1-3",
     priceDay: 3000,
@@ -35,8 +37,10 @@ const Items = [
   },
   {
     id: 2,
-    title: ["ARTSTUDIO Nevsky", "Deluxe"],
+    title: "ARTSTUDIO Nevsky",
+    typeOfApartment: "Deluxe",
     area: 43,
+    mainImg: ["deluxe.jpg"],
     images: ["deluxe.jpg"],
     guest: "1-3",
     priceDay: 3100,
@@ -69,8 +73,10 @@ const Items = [
   },
   {
     id: 3,
-    title: ["ARTSTUDIO Nevsky", "Suite"],
+    title: "ARTSTUDIO Nevsky",
+    typeOfApartment: "Suite",
     area: 58,
+    mainImg: ["suite.jpg"],
     images: ["suite.jpg"],
     guest: "1-5",
     priceDay: 4000,

@@ -23,14 +23,14 @@ class Modal extends Component {
                 <img
                   className="card__img w-full"
                   src={
-                    require(`../Card/img/${this.props.item.images[0]}`).default
+                    require(`../Card/img/${this.props.item.mainImg}`).default
                   }
                   alt="Deluxe"
                 ></img>
               </div>
               <div className="body p-8 h-full box-border">
                 <div className="card__title text-gray-800 group-hover:text-yellow-700 text-left text-2xl">
-                  {`${this.props.item.title[1]} ${this.props.item.area} `}<span className="inline">м<sup>2</sup></span>
+                  {`${this.props.item.typeOfApartment} ${this.props.item.area} `}<span className="inline">м<sup>2</sup></span>
                 </div>
                 <div className="card__info text-gray-700 mt-5 mb-12">
                   <ul className="flex infoList infoList--xs">
