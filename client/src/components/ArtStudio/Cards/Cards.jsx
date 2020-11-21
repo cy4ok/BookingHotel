@@ -16,7 +16,7 @@ class Cards extends Component {
     return (
       <>
         <div className="flex pt-20">
-          {cards.map((item,index) => (
+          {cards.map((item) => (
             <Card
               item={item}
               handleClick={this.props.handleClick}
