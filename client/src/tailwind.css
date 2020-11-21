@@ -62,7 +62,3 @@ header {
 #ApartmentsPage .camelCase {
   text-transform: lowercase;
 }
-#ApartmentsPage .address {
-  font-size: 18px;
-  margin-top: 15px;
-}

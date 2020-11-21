@@ -51,8 +51,8 @@ class Header extends React.Component {
           <h4 className="mb-8 text-xs uppercase font-bold leading-5 tracking-wide camelCase">
             {camelCase}
           </h4>
-          <h1 className="maintitle text-6xl leading-10">{maintitle}</h1>
-          <h1 className="address text-6xl leading-normal mb-16">{address}</h1>
+          <h1 className="max-w-4xl text-6xl leading-none">{maintitle}</h1>
+          <h4 className="text-lg leading-normal mt-4 mb-16">{address}</h4>
         </div>
       </div>
     );

@@ -9,7 +9,7 @@ import Footer from "../components/Footer"
 const MainPage = () => {
   return (
     <div id="MainPage">
-      <Header camelCase="Дом вдали от дома" maintitle="ARTSTUDIO - апарт-отель в &#10; " address="Санкт-Петербурге"/>
+      <Header camelCase="Дом вдали от дома" maintitle="ARTSTUDIO - апарт-отель в Санкт-Петербурге"/>
       <Offer />
       <ArtStudio />
       <CorpOffer/>
