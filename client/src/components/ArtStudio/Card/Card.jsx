@@ -31,7 +31,7 @@ class Card extends Component {
           >
             <img
               className="card__img w-full"
-              src={require(`./img/${this.state.item.mainImg}`).default}
+              src={`${this.state.item.mainImg}`}
               alt="Deluxe"
             ></img>
           </div>

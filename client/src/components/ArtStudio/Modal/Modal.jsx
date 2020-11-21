@@ -22,10 +22,8 @@ class Modal extends Component {
               <div className="card__photo relative">
                 <img
                   className="card__img w-full"
-                  src={
-                    require(`../Card/img/${this.props.item.mainImg}`).default
-                  }
-                  alt="Deluxe"
+                  src={this.props.item.mainImg}
+                  alt={this.props.item.mainImg}
                 ></img>
               </div>
               <div className="body p-8 h-full box-border">
