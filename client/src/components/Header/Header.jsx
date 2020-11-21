@@ -21,9 +21,9 @@ class Header extends React.Component {
 
   render() {
     const title = this.props.title;
-    const smalltitle = this.props.smalltitle;
+    const camelCase = this.props.camelCase;
     const maintitle = this.props.maintitle;
-    const city = this.props.city;
+    const address = this.props.address;
     return (
       <div className="relative w-full flex items-end bg-no-repeat bg-cover bg-center SectionBg">
         <header className="z-10 absolute top-0 left-0 w-full py-8 bg-secondary">
@@ -48,11 +48,11 @@ class Header extends React.Component {
         </header>
 
         <div className="container flex flex-col text-white pb-20">
-          <h4 className="mb-6 text-xs uppercase font-bold leading-5 tracking-wide smalltitle">
-            {smalltitle}
+          <h4 className="mb-8 text-xs uppercase font-bold leading-5 tracking-wide camelCase">
+            {camelCase}
           </h4>
-          <h1 className="maintitle">{maintitle}</h1>
-          <h1 className="city mb-20">{city}</h1>
+          <h1 className="maintitle text-6xl leading-10">{maintitle}</h1>
+          <h1 className="address text-6xl leading-normal mb-16">{address}</h1>
         </div>
       </div>
     );

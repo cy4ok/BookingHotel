@@ -37,10 +37,6 @@
 header {
   height: 120px;
 }
-.maintitle, .city {
-  font-size: 54px;
-  line-height: 56px;
-}
 #MainPage .SectionBg {
   background-image: url(./components/Header/img/bg-1.jpg);
   height: 620px;
@@ -63,9 +59,10 @@ header {
     rgba(0, 0, 0, 0.65) 100%
   );
 }
-#ApartmentsPage .smalltitle {
+#ApartmentsPage .camelCase {
   text-transform: lowercase;
 }
-#ApartmentsPage .city {
+#ApartmentsPage .address {
   font-size: 18px;
+  margin-top: 15px;
 }
