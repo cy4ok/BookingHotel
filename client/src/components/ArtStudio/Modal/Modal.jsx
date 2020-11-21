@@ -92,9 +92,9 @@ class Modal extends Component {
                     </div>
                   </div>
                   <div className="w-full h-16"></div>
-                  <div className="btn modal-btn bg-bgBtn hover:bg-orange-500 h-12 text-white text-center font-bold z-20 fixed right-0 bottom-0 shadow-sm">
+                  <div className="btn modal-btn bg-Btn h-12 text-white text-center font-bold z-20 fixed right-0 bottom-0 shadow-sm">
                     <Link
-                      to="/bookingpage"
+                      to="/booking"
                       className="flex justify-center items-center w-full h-full block box-border"
                     >
                       <span>Бронировать</span>
