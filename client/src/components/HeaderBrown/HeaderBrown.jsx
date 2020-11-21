@@ -3,6 +3,7 @@ import Logo from '../Header/Logo';
 import Menu from '../Header/Menu';
 import ShowButton from '../Header/ShowButton/ShowButton';
 import SlideMenu from '../Header/SlideMenu';
+import HeaderBrownTitle from '../HeaderBrownTitle';
 
 class HeaderBrown extends React.Component {
 
@@ -31,6 +32,9 @@ class HeaderBrown extends React.Component {
                     <SlideMenu handleClick={this.toggleMenu} visibility={this.state.visible} />
                 </div>
             </header>
+            <div className="py-8">
+                <HeaderBrownTitle title="Программа лояльности" />
+            </div>           
         </div>
         );
     }
