@@ -1,12 +1,19 @@
+import Superior from "../Card/img/superior.jpg";
+import Deluxe from "../Card/img/deluxe.jpg";
+import Suite from "../Card/img/suite.jpg";
+
 const Items = [
   {
     id: 1,
-    title: "ARTSTUDIO Nevsky, Superior",
-    images: ["980x770.jpg"],
+    title: "ARTSTUDIO Nevsky",
+    typeOfApartment: "Superior",
+    area: 35,
+    mainImg: Superior,
+    images: ["superior.jpg"],
     guest: "1-3",
     priceDay: 3000,
     priceMounth: 50000,
-    type: "Трёхкомнатные апартаменты",
+    type: "Двухкомнатные апартаменты",
     desc: [
       "Кровать King size/Twin",
       "Гардеробная/ система хранения",
@@ -34,12 +41,15 @@ const Items = [
   },
   {
     id: 2,
-    title: "ARTSTUDIO Nevsky, Deluxe",
-    images: ["980x770.jpg"],
+    title: "ARTSTUDIO Nevsky",
+    typeOfApartment: "Deluxe",
+    area: 43,
+    mainImg: Deluxe,
+    images: ["deluxe.jpg"],
     guest: "1-3",
     priceDay: 3100,
     priceMounth: 60000,
-    type: "Трёхкомнатные апартаменты",
+    type: "Двухкомнатные апартаменты",
     desc: [
       "Кровать King size/Twin",
       "Гардеробная/ система хранения",
@@ -67,8 +77,11 @@ const Items = [
   },
   {
     id: 3,
-    title: "ARTSTUDIO Nevsky, Suite",
-    images: ["980x770.jpg"],
+    title: "ARTSTUDIO Nevsky",
+    typeOfApartment: "Suite",
+    area: 58,
+    mainImg: Suite,
+    images: ["suite.jpg"],
     guest: "1-5",
     priceDay: 4000,
     priceMounth: 77419,
