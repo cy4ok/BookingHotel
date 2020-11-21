@@ -7,6 +7,7 @@ import Contacts from "./components/Contacts";
 import MainPage from "./pages/MainPage";
 import ToClients from "./pages/ToClients"
 import DiscountsPage from "./pages/DiscountsPage";
+import Restaurant from "./pages/Restaurant"
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           {/* <Route path="/booking" component={Booking} /> */}
            <Route path="/to-clients" component={ToClients} /> 
           {/* <Route path="/loyalty" component={Loyalty} /> */}
-          {/* <Route path="/restaurant" component={Restaurant} /> */}
+           <Route path="/restaurant" component={Restaurant} /> 
           <Route path="/discounts" component={DiscountsPage} />
           {/* <Route path="/about" component={About} /> */}
           <Route exact path="/contacts" component={Contacts} />
