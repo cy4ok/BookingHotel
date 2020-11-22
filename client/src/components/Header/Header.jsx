@@ -20,13 +20,29 @@ class Header extends React.Component {
   }
 
   render() {
+    const bgHeader = this.props.bgHeader;
     const title = this.props.title;
     const smallTitle = this.props.smallTitle;
     const mainTitle = this.props.mainTitle;
     const address = this.props.address;
     return (
-      <div className="h-56 relative w-full flex items-end bg-no-repeat bg-cover bg-center SectionBg">
-        <header className="z-10 absolute top-0 left-0 w-full py-8 bg-secondary">
+      <div
+        className="h-56 relative w-full flex items-end bg-no-repeat bg-cover bg-center SectionBg"
+        style={
+          bgHeader
+            ? { backgroundImage: `url(${bgHeader})`, height: "620px" }
+            : {}
+        } >
+        <header
+          className="z-10 absolute top-0 left-0 w-full py-8 bg-secondary"
+          style={
+            bgHeader
+              ? {
+                  backgroundColor: "transparent",
+                  backgroundImage: "linear-gradient( 0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%)",
+                }
+              : {}
+          } >
           <div className="container">
             <div className="flex justify-between items-center">
               <Logo />

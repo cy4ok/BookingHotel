@@ -5,11 +5,11 @@ import Footer from "../components/Footer"
 
 function ToClients() {
     return (
-        <div id="ToClientsPage">
-            <Header mainTitle="Корпоративная аренда квартир" />
+        <>
+            <Header bgHeader="images/bg-3.jpg" mainTitle="Корпоративная аренда квартир" />
             <ClientsSection/>
             <Footer />
-        </div>
+        </>
     );
 }
 

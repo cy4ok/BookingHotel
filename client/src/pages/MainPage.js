@@ -8,14 +8,14 @@ import Footer from "../components/Footer"
 
 const MainPage = () => {
   return (
-    <div id="MainPage">
-      <Header smallTitle="ДОМ ВДАЛИ ОТ ДОМА" mainTitle="ARTSTUDIO - апарт-отель в Санкт-Петербурге"/>
+    <>
+      <Header bgHeader="images/bg-1.jpg" smallTitle="ДОМ ВДАЛИ ОТ ДОМА" mainTitle="ARTSTUDIO - апарт-отель в Санкт-Петербурге"/>
       <Offer />
       <ArtStudio />
       <CorpOffer/>
       <Discounts title="Текущие акции" />
       <Footer />
-    </div>
+    </>
   );
 };
 
