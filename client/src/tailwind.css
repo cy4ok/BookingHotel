@@ -59,6 +59,3 @@ header {
     rgba(0, 0, 0, 0.65) 100%
   );
 }
-#ApartmentsPage .camelCase {
-  text-transform: lowercase;
-}

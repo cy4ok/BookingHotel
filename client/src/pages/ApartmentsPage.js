@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 const ApartmentsPage = () => {
   return (
     <div id="ApartmentsPage">
-      <Header camelCase="от 2 800 руб." maintitle="ARTSTUDIO Nevsky" address="ул. 2-ая Советская, 4Б, стр.1"/>
+      <Header smallTitle="от 2 800 руб." mainTitle="ARTSTUDIO Nevsky" address="ул. 2-ая Советская, 4Б, стр.1"/>
       {/* <OurAdvantages /> */}
       <Footer />
     </div>

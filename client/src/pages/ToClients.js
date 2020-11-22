@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 function ToClients() {
     return (
         <div id="ToClientsPage">
-            <Header maintitle="Корпоративная аренда квартир" />
+            <Header mainTitle="Корпоративная аренда квартир" />
             <ClientsSection/>
             <Footer />
         </div>
