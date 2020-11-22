@@ -3,12 +3,15 @@ import "./SectionBg.css";
 
 class SectionBg extends Component {
   render() {
+    const smalltitle = this.props.smalltitle;
+    const maintitle = this.props.maintitle;
+    const city = this.props.city;
     return (
-      <div className="SectionBg text-white flex items-end px-12">
-        <div className="flex flex-col pb-20">
-          <h4>Дом вдали от дома</h4>
-          <h1>ARTSTUDIO - апарт-отель в</h1>
-          <h1>Санкт-Петербурге</h1>
+      <div className="container flex items-end bg-no-repeat bg-cover bg-center SectionBg">
+        <div className="flex flex-col text-white pb-20">
+          <h4 className="mb-6 text-xs uppercase font-bold leading-5 tracking-wide smalltitle">{smalltitle}</h4>
+          <h1>{maintitle}</h1>
+          <h1 className="city">{city}</h1>
         </div>
       </div>
     );

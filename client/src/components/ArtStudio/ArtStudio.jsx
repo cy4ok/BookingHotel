@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import IconGPS from "../../images/icons/IconGPS";
 import "./ArtStudio.css";
 import Slider from "./Slider/Slider";
-import Cards from "./Cards/Cards"
+import Cards from "./Cards/Cards";
+import Img from "./Slider/img/11.jpg";
 
 class ArtStudio extends Component {
   constructor(props) {

@@ -3,6 +3,7 @@ import Logo from '../Header/Logo';
 import Menu from '../Header/Menu';
 import ShowButton from '../Header/ShowButton/ShowButton';
 import SlideMenu from '../Header/SlideMenu';
+import HeaderBrownTitle from '../HeaderBrownTitle';
 
 class HeaderBrown extends React.Component {
 
@@ -22,19 +23,18 @@ class HeaderBrown extends React.Component {
 
     render() {
         return(
-        <div className="container relative h-24">
-            <header className="z-10 absolute top-0 left-0 w-screen bg-secondary">
-                <div className="max-w-full mx-auto px-4">
-                    <div className="flex justify-between items-center py-8">
-                        <Logo/>
-                        <Menu/>
-                        <ShowButton handleClick={this.toggleMenu} />
-                        <div id="container">
-                            <SlideMenu handleClick={this.toggleMenu} visibility={this.state.visible} />
-                        </div>
-                    </div>
+        <div className="container bg-secondary">
+            <header className="py-8">
+                <div className="flex justify-between items-center">
+                    <Logo/>
+                    <Menu/>
+                    <ShowButton handleClick={this.toggleMenu} />
+                    <SlideMenu handleClick={this.toggleMenu} visibility={this.state.visible} />
                 </div>
             </header>
+            <div className="py-8">
+                <HeaderBrownTitle title="Программа лояльности" />
+            </div>           
         </div>
         );
     }

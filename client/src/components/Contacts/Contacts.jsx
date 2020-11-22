@@ -1,31 +1,20 @@
 import React from "react";
-/* import ContactTitle from "./ContactTitle.jsx"; */
 import ContactMap from "./ContactMap.jsx";
 import ContactItem from "./ContactItem.jsx";
-import ContactItems from "./ContactItems.jsx";
-import "./style.css";
 
 const Contacts = () => {
-    return (
-        <div className=" offer-section">
-            <div className="pt-20 wrap">
-                <div className="map bg-primary text-white">
-                    {/* <h3 className="uppercase text-xs font-bold">RBI PM</h3>
-                    <h3 className="uppercase text-xs font-bold">ARTSTUDIO Nevsky</h3> */}
-                    <div className="map">
-                        {ContactItems.map(({ title, text }) => {
-                            return <ContactItem title={title} text={text} />;
-                        })}
-                    </div>
-                    </div>
-                    <div className="map">
-                    <ContactMap />
-                    </div>
-
-            </div>
+  return (
+    <div className="w-full pb-20 pt-12 bg-fourth">
+      <div className="mt-20 flex flex-row bg-primary">
+        <div className="w-1/2 bg-primary text-white py-20">
+          <ContactItem />
         </div>
-
-    )
+        <div className="contacts-map">
+          <ContactMap />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Contacts;

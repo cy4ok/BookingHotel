@@ -1,13 +1,16 @@
 import React from 'react';
+import Header from "../components/Header";
 import ClientsSection from "../components/Clients/ClientsSection"
 import ClientsHero from "../components/Clients/ClientsHero"
-import HeaderAll from "../components/Restaurant/HeaderAll.jsx"
+import Footer from "../components/Footer"
+
 function ToClients() {
     return (
-        <div className="page_wrap relative">
-            <HeaderAll/>
+        <div id="ToClientsPage">
+            <Header/>
             <ClientsHero/>
             <ClientsSection/>
+            <Footer />
         </div>
     );
 }
