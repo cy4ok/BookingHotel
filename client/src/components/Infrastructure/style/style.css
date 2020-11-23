@@ -25,9 +25,7 @@
 .btn-linicon{
 display: inline;
 }
-.btn{
-    color:#fff;
-}
+
 .btn:hover{
     color: #ca9d56;
 }
