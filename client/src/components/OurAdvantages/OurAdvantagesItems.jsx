@@ -1,7 +1,7 @@
 import IconSign from "../../images/icons/IconSign";
 import IconKey from "../../images/icons/IconKey";
 import IconBag from "../../images/icons/IconBag";
-import IconPaw from "../../images/icons/IconGPS";
+import IconPaw from "../../images/icons/IconPaw";
 
 export const OurAdvantagesItems = [
   {
