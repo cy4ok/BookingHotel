@@ -11,39 +11,17 @@ import slide10 from "./img/10.jpg";
 import slide11 from "./img/11.jpg";
 
 const Items = [
-  {
-    img: slide1,
-  },
-  {
-    img: slide2,
-  },
-  {
-    img: slide3,
-  },
-  {
-    img: slide4,
-  },
-  {
-    img: slide5,
-  },
-  {
-    img: slide6,
-  },
-  {
-    img: slide7,
-  },
-  {
-    img: slide8,
-  },
-  {
-    img: slide9,
-  },
-  {
-    img: slide10,
-  },
-  {
-    img: slide11,
-  },
+  slide1,
+  slide2,
+  slide3,
+  slide4,
+  slide5,
+  slide6,
+  slide7,
+  slide8,
+  slide9,
+  slide10,
+  slide11,
 ];
 
 export default Items;

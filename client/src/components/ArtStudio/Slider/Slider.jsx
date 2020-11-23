@@ -11,7 +11,6 @@ class SimpleSlider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      
     };
   }
 
@@ -25,11 +24,12 @@ class SimpleSlider extends Component {
       arrows: true,
       key: true,
     };
+
     return (
       <div>
         <Slider {...settings}>
-          {Items.map(({ img, index }) => (
-            <SlideItem img={img} key={index} />
+          {Items.map((item, index ) => (
+            <SlideItem img={item} key={index} />
           ))}
         </Slider>
       </div>
