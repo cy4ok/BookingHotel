@@ -12,3 +12,22 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.textGray{
+    color: rgba(57,57,55,.6);
+}
+.business-client{
+    width: 100%;
+    min-height: 500px;
+    background-image: url(../img/businessclients.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-linicon{
+display: inline;
+}
+.btn{
+    color:#fff;
+}
+.btn:hover{
+    color: #ca9d56;
+}
