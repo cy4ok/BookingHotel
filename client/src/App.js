@@ -10,6 +10,7 @@ import DiscountsPage from "./pages/DiscountsPage";
 import LoyaltyPage from "./pages/LoyaltyPage";
 import ContactsPage from "./pages/ContactsPage";
 import BookingPage from "./pages/BookingPage";
+import OfficesPage from "./pages/OfficesPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/discounts" component={DiscountsPage} />
           {/* <Route path="/about" component={About} /> */}
           <Route exact path="/contacts" component={ContactsPage} />
+          <Route exact path="/offices" component={OfficesPage} />
         </Switch>
         {/* <Footer /> */}
       </Router>
