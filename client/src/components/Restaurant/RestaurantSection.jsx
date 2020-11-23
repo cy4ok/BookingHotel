@@ -1,6 +1,7 @@
 import React from "react";
 import ModalSlider from "./ModalSlider";
 import { restaurantImgData } from "./restaurantImgData";
+
 function RestaurantSection() {
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
   const [active, setActive] = React.useState();

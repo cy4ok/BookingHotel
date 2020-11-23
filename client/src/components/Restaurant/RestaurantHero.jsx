@@ -1,5 +1,6 @@
 import React from "react";
 import "./customstyles/restaurantstyle.css";
+
 function RestaurantHero() {
   return (
     <div className="hero-bg w-full">
