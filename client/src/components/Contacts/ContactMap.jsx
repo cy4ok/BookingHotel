@@ -8,7 +8,7 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 class ContactMap extends Component {
   static defaultProps = {
     center: {
-      lat: 59.933151, 
+      lat: 59.933151,
       lng: 30.365748,
     },
     zoom: 10
@@ -35,4 +35,4 @@ class ContactMap extends Component {
 }
 
 
-export default ContactMap; 
+export default ContactMap;

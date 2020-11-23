@@ -13,8 +13,8 @@ const Discounts = ({ title }) => {
         )}
         <div className="flex">
           {discountsItems.map(({ img, title, texts }, idx) => {
-            const text = texts.map((item) => {
-              return <p>{item}</p>;
+            const text = texts.map((item, idx) => {
+              return <p key={idx}>{item}</p>;
             });
             return (
               <DiscountItem img={img} title={title} text={text} key={idx} />
