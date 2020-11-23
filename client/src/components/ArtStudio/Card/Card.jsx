@@ -24,7 +24,7 @@ class Card extends Component {
       <div className="flex-1 text-left px-2 py-1 m-1" key={this.props.item.id}>
         <div className="card group relative box-border z-10">
           <div
-            className="card__photo relative"
+            className="card__photo relative cursor-pointer"
             onClick={() => {
               this.toggleModal();
             }}
