@@ -6,6 +6,7 @@ function RestaurantSection() {
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
   const [active, setActive] = React.useState();
   const [tumbs, setTumbs] = React.useState(false);
+
   const handlerClick = (e) => {
     setModalIsOpen(true);
     setActive(+e.target.name);
