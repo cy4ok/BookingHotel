@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 function ToClients() {
     return (
         <>
-            <Header bgHeader="images/bg-3.jpg" mainTitle="Корпоративная аренда квартир" />
+            <Header bgHeader="header-bg-3" mainTitle="Корпоративная аренда квартир" />
             <ClientsSection/>
             <Footer />
         </>

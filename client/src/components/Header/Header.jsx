@@ -27,12 +27,13 @@ class Header extends React.Component {
     const address = this.props.address;
     return (
       <div
-        className="h-56 relative w-full flex items-end bg-no-repeat bg-cover bg-center SectionBg"
+        className={`h-56 relative w-full flex items-end bg-${bgHeader} bg-no-repeat bg-cover bg-center`}
         style={
           bgHeader
-            ? { backgroundImage: `url(${bgHeader})`, height: "620px" }
+            ? { height: "620px" }
             : {}
-        } >
+        } 
+        >
         <header
           className="z-10 absolute top-0 left-0 w-full py-8 bg-secondary"
           style={
