@@ -64,7 +64,7 @@ class Card extends Component {
               </ul>
             </div>
           </div>
-          <div className="btn bg-btnGold w-48 h-12  mt-12 text-white text-center font-bold z-20 relative">
+          <div className="btn bg-Btn w-48 h-12  mt-12 text-white text-center font-bold z-20 relative">
             <Link
               to="/booking"
               className="flex justify-center items-center w-full h-full block box-border"

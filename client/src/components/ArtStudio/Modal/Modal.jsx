@@ -92,7 +92,7 @@ class Modal extends Component {
                     </div>
                   </div>
                   <div className="w-full h-16"></div>
-                  <div className="btn modal-btn bg-btnGold h-12 text-white text-center font-bold z-20 fixed right-0 bottom-0 shadow-sm">
+                  <div className="btn modal-btn bg-Btn h-12 text-white text-center font-bold z-20 fixed right-0 bottom-0 shadow-sm">
                     <Link
                       to="/booking"
                       className="flex justify-center items-center w-full h-full block box-border"
