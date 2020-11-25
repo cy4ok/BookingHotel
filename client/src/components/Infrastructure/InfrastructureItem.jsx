@@ -4,19 +4,19 @@ import { Link } from "react-router-dom";
 
 function InfrastructureItem() {
     return (
-        <div className="flex flex-row ">
+        <div className="flex flex-row justify-between">
 
-            <div className="w-1/2 p-2  h-auto">
-                <div className="bistro mb-4"></div>
-                <div className="text-2xl py-4 text-brown">
+            <div className="w-1/2 h-auto">
+                <div className="bistro mb-8"></div>
+                <div className="text-2xl text-brown">
                 <Link to="/restaurant">ATLAS Bistro</Link>
                     </div>
-                <div className="text-lg textGray">Ресторан неофранцузской кухни</div>
+                <div className="text-lg textGray py-2">Ресторан неофранцузской кухни</div>
             </div>
-            <div className="w-1/2 p-2  h-auto">
-                <div className="parking mb-4"></div>
-                <div className="text-2xl py-4">Подземный паркинг</div>
-                <div className="text-lg textGray">Просторный отапливаемый паркинг на 67 машиномест с доступом на этажи</div>
+            <div className="w-1/2 h-auto">
+                <div className="parking mb-8"></div>
+                <div className="text-2xl ">Подземный паркинг</div>
+                <div className="text-lg textGray py-2">Просторный отапливаемый паркинг на 67 машиномест с доступом на этажи</div>
             </div>
         </div>
     );
