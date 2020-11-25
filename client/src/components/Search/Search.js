@@ -39,11 +39,11 @@ const Search = () => {
               <div className="flex w-full border-black">
                 <div className="w-2/3">Взрослые</div>
                 <div className="flex w-1/3">
-                  <div className="flex justify-center items-center text-2xl search-btn-circle cursor-pointer bg-bgBtn text-white">
+                  <div className="flex justify-center items-center text-2xl search-btn-circle cursor-pointer bg-btnGold text-white">
                     -
                   </div>
                   <input className="w-16" />
-                  <div className="flex justify-center items-center text-2xl search-btn-circle cursor-pointer bg-bgBtn text-white">
+                  <div className="flex justify-center items-center text-2xl search-btn-circle cursor-pointer bg-btnGold text-white">
                     +
                   </div>
                 </div>
@@ -51,11 +51,11 @@ const Search = () => {
               <div className="flex w-full border-black mt-5">
                 <div className="w-2/3">Дети</div>
                 <div className="flex w-1/3">
-                  <div className="flex justify-center items-center text-2xl search-btn-circle cursor-pointer bg-bgBtn text-white">
+                  <div className="flex justify-center items-center text-2xl search-btn-circle cursor-pointer bg-btnGold text-white">
                     -
                   </div>
                   <input className="w-16" />
-                  <div className="flex justify-center items-center text-2xl search-btn-circle cursor-pointer bg-bgBtn text-white">
+                  <div className="flex justify-center items-center text-2xl search-btn-circle cursor-pointer bg-btnGold text-white">
                     +
                   </div>
                 </div>
@@ -65,7 +65,7 @@ const Search = () => {
           {errors.exampleRequired && <span>This field is required</span>}
           <input
             type="submit"
-            className="search-btn-submit outline-none h-full w-2/5 bg-bgBtn cursor-pointer text-white uppercase text-sm font-bold"
+            className="search-btn-submit outline-none h-full w-2/5 bg-btnGold cursor-pointer text-white uppercase text-sm font-bold relative"
             value="найти"
           />
         </div>
