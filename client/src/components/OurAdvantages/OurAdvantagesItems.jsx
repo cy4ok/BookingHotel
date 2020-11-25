@@ -1,9 +1,9 @@
-import IconKey from "../../images/icons/IconKey";
 import IconSign from "../../images/icons/IconSign";
+import IconKey from "../../images/icons/IconKey";
 import IconBag from "../../images/icons/IconBag";
-import IconGPS from "../../images/icons/IconGPS";
+import IconPaw from "../../images/icons/IconPaw";
 
-export const offerItems = [
+export const OurAdvantagesItems = [
   {
     icon: <IconSign />,
     title: "Дом вдали от дома",
@@ -23,7 +23,7 @@ export const offerItems = [
       "Апартаменты полностью оборудованы всем необходимым для жизни: от всей необходимой бытовой техники до посуды и домашних тапочек.",
   },
   {
-    icon: <IconGPS />,
+    icon: <IconPaw />,
     title: "Гибкие тарифы",
     text: "Чем дольше вы живете, тем дешевле! Платите только за те услуги, которые вам необходимы",
   },
