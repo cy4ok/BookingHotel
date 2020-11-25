@@ -22,17 +22,17 @@ class Footer extends React.Component {
               </div>
               <div className="flex p-2 text-white">
                 <div className="mr-4">
-                  <a href="https://www.vk.com/" target="_blank" rel="noreferrer" className="btn--social text-center leading-9 hover:bg-bgBtn">
+                  <a href="https://www.vk.com/" target="_blank" rel="noreferrer" className="btn--social text-center leading-9 hover:bg-btnGold">
                     <FontAwesomeIcon icon={faVk} size="1x" className="social-icons icon-vk" />
                   </a>
                 </div>
                 <div className="mr-4">
-                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" className="btn--social text-center leading-9 hover:bg-bgBtn">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" className="btn--social text-center leading-9 hover:bg-btnGold">
                     <FontAwesomeIcon icon={faFacebookF} size="1x" className="social-icons icon-fb"/>
                   </a>
                 </div>
                 <div>
-                  <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="btn--social text-center leading-9 hover:bg-bgBtn">
+                  <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="btn--social text-center leading-9 hover:bg-btnGold">
                     <FontAwesomeIcon icon={faInstagram} size="1x" className="social-icons icon-inst"/>
                   </a>
                 </div>

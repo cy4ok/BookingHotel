@@ -28,16 +28,17 @@
   border-radius: 50%;
   width: 36px;
   height: 36px;
-  padding-top: 3px;
+  padding-top: 2px;
 }
 
 .search-guests {
   top: 100%;
 }
 
-.search-btn-submit:hover {
-  transition: 0.3s all ease-in-out;
-  background-color:rgb(181, 142, 78);
+.search-btn-submit:hover,
+.search-btn-circle:hover {
+  background-color: rgb(181, 142, 78);
+  transition: all 0.3s ease-in-out;
 }
 
 .react-datepicker-wrapper {
