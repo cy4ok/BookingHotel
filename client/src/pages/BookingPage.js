@@ -5,7 +5,7 @@ import Header from "../components/Header";
 const BookingPage = () => {
   return (
     <>
-      <Header title="Программа лояльности" />
+      <Header title="Заявка на бронирование" />
       <Booking />
     </>
   );
