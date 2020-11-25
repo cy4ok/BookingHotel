@@ -26,6 +26,13 @@
 display: inline;
 }
 
+
 .btn:hover{
     color: #ca9d56;
+}
+.icon_marker{
+    color: #ca9d56;
+}
+.icon_marker:hover{
+    color:#000;
 }
