@@ -32,7 +32,7 @@ module.exports = {
         secondary: "#564038",
         third: "#ca9d56",
         fourth: "#f5f5f5",
-        Btn: "#ca9d56",
+        btnGold: "#ca9d56",
       }),
       textOpacity: {
         60: "0.6",
