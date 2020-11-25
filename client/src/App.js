@@ -12,6 +12,7 @@ import LoyaltyPage from "./pages/LoyaltyPage";
 import ContactsPage from "./pages/ContactsPage";
 import BookingPage from "./pages/BookingPage";
 import OfficesPage from "./pages/OfficesPage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
           <Route exact path="/contacts" component={ContactsPage} />
           <Route exact path="/offices" component={OfficesPage} />
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </React.StrictMode>
   );
