@@ -15,6 +15,12 @@ module.exports = {
           "url('components/Discounts/images/discounts-bg-1.jpg')",
         "discounts-bg-2":
           "url('components/Discounts/images/discounts-bg-2.jpg')",
+        "header-bg-1":
+          "url('components/Header/images/bg-1.jpg')",
+        "header-bg-2":
+          "url('components/Header/images/bg-2.jpg')",
+        "header-bg-3":
+          "url('components/Header/images/bg-3.jpg')",
       }),
       colors: {
         brown: "#ca9d56",
@@ -26,16 +32,12 @@ module.exports = {
         secondary: "#564038",
         third: "#ca9d56",
         fourth: "#f5f5f5",
+        Btn: "#ca9d56",
       }),
       textOpacity: {
         60: "0.6",
       },
     },
-    backgroundColor: (theme) => ({
-      primary: "#393937",
-      secondary: "#564038",
-      bgBtn: "#ca9d56",
-    }),
   },
   variants: {
     textColor: ["responsive", "hover", "focus", "group-hover"],
