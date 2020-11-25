@@ -7,9 +7,11 @@ import MainPage from "./pages/MainPage";
 import ApartmentsPage from "./pages/ApartmentsPage";
 import ToClients from "./pages/ToClients";
 import DiscountsPage from "./pages/DiscountsPage";
+import Restaurant from "./pages/Restaurant"
 import LoyaltyPage from "./pages/LoyaltyPage";
 import ContactsPage from "./pages/ContactsPage";
 import BookingPage from "./pages/BookingPage";
+import OfficesPage from "./pages/OfficesPage";
 
 function App() {
   return (
@@ -17,14 +19,17 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={MainPage} />
+          {/* <Route path="/apartments" component={Apartments} /> */}
+          {/* <Route path="/booking" component={Booking} /> */}
+           <Route path="/restaurant" component={Restaurant} /> 
           <Route path="/apartments" component={ApartmentsPage} />
           <Route path="/booking" component={BookingPage} />
           <Route path="/to-clients" component={ToClients} />
           <Route path="/loyalty" component={LoyaltyPage} />
-          {/* <Route path="/restaurant" component={Restaurant} /> */}
           <Route path="/discounts" component={DiscountsPage} />
           {/* <Route path="/about" component={About} /> */}
           <Route exact path="/contacts" component={ContactsPage} />
+          <Route exact path="/offices" component={OfficesPage} />
         </Switch>
         {/* <Footer /> */}
       </Router>
