@@ -1,0 +1,50 @@
+.modal {
+  background-color: #21211e9e;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 200;
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.wrp {
+  background-color: #fff;
+}
+
+body {
+  overflow: auto;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.wrp {
+  overflow-y: scroll;
+  width: 500px;
+}
+
+.modal-desc {
+  list-style-type: disc;
+}
+
+.modal-services {
+  list-style-type: disc;
+}
+
+.modal-line {
+  height: 1px;
+}
+
+.modal-btn {
+  width: 500px;
+  box-shadow: 0px 1px 40px -5px rgba(0, 0, 0, 0.5);
+}

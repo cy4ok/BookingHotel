@@ -1,0 +1,25 @@
+.hero-bg {
+  background-color: #564038;
+}
+.btn-arrow {
+  fill: white;
+  z-index: 30;
+}
+.img_section_item:hover {
+  filter: brightness(50%);
+}
+
+.slide_img {
+  animation: slideractiv 0.3s linear;
+}
+.slide_scale {
+  transform: scale(1.3) translate(0, 12%);
+}
+@keyframes slideractiv {
+  0% {
+    transform: scale(0.1) translate(0, 100%);
+  }
+  100% {
+    transform: scale(0.7) translate(0, 0);
+  }
+}

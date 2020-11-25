@@ -1,14 +1,15 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import IconGPS from "../../images/icons/IconGPS";
 import "./ArtStudio.css";
 import Slider from "./Slider/Slider";
 import Cards from "./Cards/Cards";
-import Img from "./Slider/img/11.jpg";
 
 class ArtStudio extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      visible: false,
       title: "ARTSTUDIO Nevsky",
       text:
         "Комфортные апартаменты в центре города для любителей романтики, творческих личностей и бизнес-туристов.",
@@ -19,16 +20,16 @@ class ArtStudio extends Component {
 
   render() {
     return (
-      <div className="section atrstudio-section">
+      <div className="section atrstudio-section box-border">
         <div className="container">
           <div className="flex bg-white text-black ">
             <div className="flex-initial title-h1">{this.state.title}</div>
             <div className="flex-initial text">
               {this.state.text}
-              <a href="/contacts" class="btn btn-iconText">
+              <Link to="/contacts" className="btn btn-iconText">
                 {this.state.linkicon}
                 <span> {this.state.link}</span>
-              </a>
+              </Link>
             </div>
           </div>
           <div>

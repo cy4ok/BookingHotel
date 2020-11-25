@@ -1,14 +1,12 @@
 import React from 'react'
 import Discounts from '../components/Discounts'
-import HeaderBrownTitle from '../components/HeaderBrownTitle';
-import HeaderBrown from '../components/HeaderBrown';
+import Header from '../components/Header';
 import Footer from "../components/Footer"
 
 const DiscountsPage = () => {
     return (
         <>
-        <HeaderBrown />
-        <HeaderBrownTitle title="Акции" />
+        <Header title="Акции" />
         <Discounts />
         <Footer />
         </>
