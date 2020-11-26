@@ -2,37 +2,35 @@
     width: 610px;
     height: 312px;
     background-image: url(../img/bistro.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
+
 .parking{
     width: 610px;
     height: 312px;
     background-image: url(../img/parking.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
+
 .textGray{
     color: rgba(57,57,55,.6);
 }
+
 .business-client{
-    width: 100%;
     min-height: 500px;
     background-image: url(../img/businessclients.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
+
 .btn-linicon{
 display: inline;
 }
 
-
 .btn:hover{
     color: #ca9d56;
 }
+
 .icon_marker{
     color: #ca9d56;
 }
+
 .icon_marker:hover{
     color:#000;
 }
