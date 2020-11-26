@@ -13,6 +13,7 @@ import ContactsPage from "./pages/ContactsPage";
 import BookingPage from "./pages/BookingPage";
 import OfficesPage from "./pages/OfficesPage";
 import Footer from "./components/Footer";
+import PolicyPage from "./components/Policy"
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/loyalty" component={LoyaltyPage} />
           <Route path="/discounts" component={DiscountsPage} />
           {/* <Route path="/about" component={About} /> */}
+          <Route path="/polisy" component={PolicyPage} />
           <Route exact path="/contacts" component={ContactsPage} />
           <Route exact path="/offices" component={OfficesPage} />
         </Switch>
