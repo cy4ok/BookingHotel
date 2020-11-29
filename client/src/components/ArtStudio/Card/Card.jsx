@@ -42,7 +42,7 @@ class Card extends Component {
             }}
           >
             <div className="card__title text-gray-800 group-hover:text-yellow-700 text-left text-2xl">
-              {`${this.props.item.title}, `}
+              {`${this.props.item.title}` && `${this.props.item.title}, `}
               <span className="block w-full">
                 {this.props.item.typeOfApartment}
               </span>

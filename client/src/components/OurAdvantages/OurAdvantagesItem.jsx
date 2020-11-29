@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function OurAdvantagesItem({ icon, titel, subtitel }) {
+function OurAdvantagesItem({ icon, titel, text }) {
   return (
     <div className="advantages-item relative pl-16 mb-12">
       <div className="advantages-icon absolute top-2 left-0">{icon}</div>

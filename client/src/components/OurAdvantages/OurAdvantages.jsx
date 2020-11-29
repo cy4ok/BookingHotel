@@ -1,12 +1,12 @@
 import React from "react";
 import OurAdvantagesItem from "./OurAdvantagesItem";
 import { OurAdvantagesItems } from "./OurAdvantagesItems";
-import "./styles/style.css";
+import "./style/style.css";
 
 
 function OurAdvantages() {
     return (
-        <div className="advantages bg-primary text-white">
+        <div className="mt-16 advantages bg-primary text-white">
             <div className="container px-12">
                 <div className="advantages-inner flex flex-wrap justify-between pt-10 pb-20 ">
                     <div className="advantages-img  lg:w-3/5 sm:w-full md:full  bg-cover bg-center bg-no-repeat lg:-ml-12 lg:-mt-20 sm:ml-0  sm:mt-0 "></div>
