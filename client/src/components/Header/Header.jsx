@@ -44,7 +44,6 @@ class Header extends React.Component {
                 }
               : {}
           } >
-          <div className="container">
             <div className="flex justify-between items-center">
               <Logo />
               <Menu />
@@ -54,7 +53,6 @@ class Header extends React.Component {
                 visibility={this.state.visible}
               />
             </div>
-          </div>
           <div className={`w-full ${title ? "bg-secondary" : "bg-transparent"}`}>
             <div className="container">
               <div className="py-16">

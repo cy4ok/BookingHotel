@@ -20,8 +20,6 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={MainPage} />
-          {/* <Route path="/apartments" component={Apartments} /> */}
-          {/* <Route path="/booking" component={Booking} /> */}
            <Route path="/restaurant" component={Restaurant} /> 
           <Route path="/apartments" component={ApartmentsPage} />
           <Route path="/booking" component={BookingPage} />
