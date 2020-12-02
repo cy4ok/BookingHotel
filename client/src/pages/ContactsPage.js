@@ -1,6 +1,5 @@
 import React from "react";
 import Contacts from "../components/Contacts";
-import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const ContactsPage = () => {
@@ -8,7 +7,6 @@ const ContactsPage = () => {
     <>
       <Header title="Контакты" />
       <Contacts />
-      <Footer />
     </>
   );
 };
