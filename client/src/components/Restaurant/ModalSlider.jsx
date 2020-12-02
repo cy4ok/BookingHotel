@@ -30,7 +30,7 @@ function ModalSlider({ data, close, open, initial, tumbsOpen }) {
   };
   if (!open) return null;
   return (
-    <div className="modal_window bg-black absolute top-0  left-0 right-0 bg-opacity-75 pb-4">
+    <div className="modal_window bg-black absolute top-0  left-0 right-0 bottom-0 bg-opacity-75 pb-4">
       <div className="modal_header w-full flex px-3 justify-end py-1">
         <ZoomIcon onClick={() => setScale(!scale)} />
         <PlayIcon />
@@ -38,12 +38,12 @@ function ModalSlider({ data, close, open, initial, tumbsOpen }) {
         <CloseIcon onClick={close} />
       </div>
 
-      <div className="slider_inner w-full h-full flex justify-center aling-center">
+      <div className="slider_inner w-full  flex justify-center aling-center">
         <ArowLeft onClick={prevSlide} />
         <img
           className={
             (open
-              ? "slide_img  w-4/5 object-scale-down"
+              ? "slide_img  w-4/5  object-scale-down"
               : " w-4/5 object-scale-down",
             scale
               ? "   slide_scale w-4/5 object-scale-down"
