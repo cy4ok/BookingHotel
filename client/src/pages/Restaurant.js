@@ -1,13 +1,11 @@
 import React from 'react';
-import RestaurantHero from "../components/Restaurant/RestaurantHero";
 import RestaurantSection from "../components/Restaurant/RestaurantSection"
-import HeaderAll from "../components/Restaurant/HeaderAll.jsx"
+import Header from "../components/Header";
 
 function Restaurant() {
     return (
-        <div className="page_wrap relative">
-            <HeaderAll/>
-            <RestaurantHero/>
+        <div className="page_wrap ">
+            <Header title="Ресторан ATLAS BISTRO"/>
             <RestaurantSection/>
         </div>
     );
