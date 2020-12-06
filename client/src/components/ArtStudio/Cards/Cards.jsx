@@ -16,7 +16,7 @@ class Cards extends Component {
     return (
       <>
         <div className="flex pt-20">
-          {cards.map((item) => (
+          {cards.filter(item => [2,3,5].indexOf(item.id) !== -1).map((item) => (
             <Card
               item={item}
               handleClick={this.props.handleClick}

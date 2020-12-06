@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Items5 from "./Items5";
+import Items from "../ArtStudio/Cards/Items";
 import Card from "../ArtStudio/Card/Card";
 
 class Cards extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cards: Items5,
+      cards: Items,
     };
   }
 
@@ -22,6 +22,7 @@ class Cards extends Component {
               handleClick={this.props.handleClick}
               visibility={this.state.visible}
               key={item.id}
+              displayTitle={false}
             />
           ))}
         </div>

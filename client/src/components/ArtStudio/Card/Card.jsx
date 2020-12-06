@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Modal from "../Modal/Modal";
-
 import "./Card.css";
 
 class Card extends Component {
@@ -20,6 +19,8 @@ class Card extends Component {
   }
 
   render() {
+    const displayTitle = typeof this.props.displayTitle == "undefined" ? true : this.props.displayTitle;
+    
     return (
       <div className="flex-1 text-left px-2 py-1 m-1" key={this.props.item.id}>
         <div className="card group relative box-border z-10">
@@ -42,7 +43,7 @@ class Card extends Component {
             }}
           >
             <div className="card__title text-gray-800 group-hover:text-yellow-700 text-left text-2xl">
-              {`${this.props.item.title}` && `${this.props.item.title}, `}
+              {displayTitle ? this.props.item.title + ',' : ''}
               <span className="block w-full">
                 {this.props.item.typeOfApartment}
               </span>
