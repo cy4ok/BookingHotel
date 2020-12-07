@@ -14,6 +14,7 @@
 
 .search-section {
   max-width: 1500px;
+  width: 100%;
 }
 
 .search-input {
@@ -43,7 +44,12 @@
   background-color: rgb(181, 142, 78);
   transition: all 0.5s ease-in-out;
 }
+/*
+.calendar {
+  top: 720px;
+} */
 
+/*
 .react-datepicker-wrapper {
   width: 50%;
   height: 100%;
@@ -52,7 +58,7 @@
 .react-datepicker__input-container {
   width: 100%;
   height: 100%;
-}
+} */
 
 .offer-icon {
   top: 7px;
