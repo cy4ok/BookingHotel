@@ -1,15 +1,14 @@
 import React from 'react';
-import Footer from "../components/Footer";
-import About from '../components/About/About';
 import Header from '../components/Header';
+import About from '../components/About';
+import Footer from "../components/Footer";
 
 const AboutPage = () => {
     return (
-        <div id="AboutPage">
+        <>
             <Header title="О компании" />
-            <About /> 
-            <Footer />
-        </div>
+            <About />
+        </>
     );
 };
 

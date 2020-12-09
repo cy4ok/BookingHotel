@@ -1,0 +1,20 @@
+.bistro{
+    width: 610px;
+    height: 312px;
+    background-image: url(../img/bistro.jpg);
+}
+
+.parking{
+    width: 610px;
+    height: 312px;
+    background-image: url(../img/parking.jpg);
+}
+
+.business-client{
+    min-height: 500px;
+    background-image: url(../img/businessclients.jpg);
+}
+
+.btn-linicon{
+display: inline;
+}

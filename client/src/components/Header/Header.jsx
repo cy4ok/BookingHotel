@@ -28,23 +28,19 @@ class Header extends React.Component {
     return (
       <div
         className={`h-56 relative w-full flex items-end bg-${bgHeader} bg-no-repeat bg-cover bg-center`}
-        style={
-          bgHeader
-            ? { height: "620px" }
-            : {}
-        } 
-        >
+        style={bgHeader ? { height: "620px" } : {}}
+      >
         <header
           className="z-10 absolute top-0 left-0 w-full py-8 bg-secondary"
           style={
             bgHeader
               ? {
                   backgroundColor: "transparent",
-                  backgroundImage: "linear-gradient( 0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%)",
+                  backgroundImage:
+                    "linear-gradient( 0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%)",
                 }
               : {}
           } >
-          <div className="container">
             <div className="flex justify-between items-center">
               <Logo />
               <Menu />
@@ -54,7 +50,6 @@ class Header extends React.Component {
                 visibility={this.state.visible}
               />
             </div>
-          </div>
           <div className={`w-full ${title ? "bg-secondary" : "bg-transparent"}`}>
             <div className="container">
               <div className="py-16">
