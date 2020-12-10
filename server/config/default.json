@@ -1,4 +1,5 @@
 {
     "port": 5000,
+    "jwtSecrret": "cy4ok booking hotel",
     "mongoUri": "mongodb+srv://cy4ok:1234qwer@cluster0.7hlcw.mongodb.net/<dbname>?retryWrites=true&w=majority"
 }
