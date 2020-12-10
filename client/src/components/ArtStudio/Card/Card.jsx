@@ -8,6 +8,7 @@ class Card extends Component {
     super(props);
     this.state = {
       item: this.props.item,
+      title: this.props.title,
     };
     this.toggleModal = this.toggleModal.bind(this);
   }
@@ -19,8 +20,6 @@ class Card extends Component {
   }
 
   render() {
-    const displayTitle = typeof this.props.displayTitle == "undefined" ? true : this.props.displayTitle;
-    
     return (
       <div className="flex-1 text-left px-2 py-1 m-1" key={this.props.item.id}>
         <div className="card group relative box-border z-10">
@@ -43,7 +42,7 @@ class Card extends Component {
             }}
           >
             <div className="card__title text-gray-800 group-hover:text-yellow-700 text-left text-2xl">
-              {displayTitle ? this.props.item.title + ',' : ''}
+              {this.props.title}
               <span className="block w-full">
                 {this.props.item.typeOfApartment}
               </span>

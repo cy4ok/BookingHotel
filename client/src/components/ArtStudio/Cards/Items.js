@@ -7,7 +7,6 @@ import JuniorSuite from "../Card/img/juniorSuite.jpg";
 const Items = [
   {
     id: 1,
-    title: "",
     typeOfApartment: "Studio",
     area: 29,
     mainImg: Studio,
@@ -43,7 +42,7 @@ const Items = [
   },
   {
     id: 2,
-    title: "ARTSTUDIO Nevsky",
+    page: "MainPage",
     typeOfApartment: "Superior",
     area: 35,
     mainImg: Superior,
@@ -79,7 +78,7 @@ const Items = [
   },
   {
     id: 3,
-    title: "ARTSTUDIO Nevsky",
+    page: "MainPage",
     typeOfApartment: "Deluxe",
     area: 43,
     mainImg: Deluxe,
@@ -115,7 +114,6 @@ const Items = [
   },
   {
     id: 4,
-    title: "",
     typeOfApartment: "Junior Suite",
     area: 57,
     mainImg: JuniorSuite,
@@ -151,7 +149,7 @@ const Items = [
   },
   {
     id: 5,
-    title: "ARTSTUDIO Nevsky",
+    page: "MainPage",
     typeOfApartment: "Suite",
     area: 58,
     mainImg: Suite,
