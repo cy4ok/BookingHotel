@@ -40,9 +40,7 @@ class Header extends React.Component {
                     "linear-gradient( 0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%)",
                 }
               : {}
-          }
-        >
-          <div className="container">
+          } >
             <div className="flex justify-between items-center">
               <Logo />
               <Menu />
@@ -52,10 +50,7 @@ class Header extends React.Component {
                 visibility={this.state.visible}
               />
             </div>
-          </div>
-          <div
-            className={`w-full ${title ? "bg-secondary" : "bg-transparent"}`}
-          >
+          <div className={`w-full ${title ? "bg-secondary" : "bg-transparent"}`}>
             <div className="container">
               <div className="py-16">
                 {title && <h4 className="text-white text-5xl">{title}</h4>}
