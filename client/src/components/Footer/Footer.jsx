@@ -64,7 +64,7 @@ class Footer extends React.Component {
                 <div className="flex flex-col text-lg mb-8">
                   <SlideItem name="О RBI PM" url="/about" />
                   <SlideItem name="Контакты" url="/contacts" />
-                  <SlideItem name="Политика конфиденциальности" url="/" />
+                  <SlideItem name="Политика конфиденциальности" url="/policy" />
                   <SlideItem name="Пользовательское соглашение" url="/" />
                   <SlideItem name="Публичная оферта" url="/" />
                   <SlideItem name="Оплата" url="/" />

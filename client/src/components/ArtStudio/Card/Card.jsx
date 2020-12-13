@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Modal from "../Modal/Modal";
-
 import "./Card.css";
 
 class Card extends Component {
@@ -9,6 +8,7 @@ class Card extends Component {
     super(props);
     this.state = {
       item: this.props.item,
+      title: this.props.title,
     };
     this.toggleModal = this.toggleModal.bind(this);
   }
@@ -42,7 +42,7 @@ class Card extends Component {
             }}
           >
             <div className="card__title text-gray-800 group-hover:text-yellow-700 text-left text-2xl">
-              {`${this.props.item.title}, `}
+              {this.props.title}
               <span className="block w-full">
                 {this.props.item.typeOfApartment}
               </span>

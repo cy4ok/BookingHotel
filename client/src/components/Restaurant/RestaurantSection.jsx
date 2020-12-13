@@ -1,6 +1,7 @@
 import React from "react";
 import ModalSlider from "./ModalSlider";
 import { restaurantImgData } from "./restaurantImgData";
+import "./customstyles/restaurantstyle.css";
 
 function RestaurantSection() {
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
@@ -16,7 +17,11 @@ function RestaurantSection() {
     setTumbs(false);
   };
   return (
-    <div className={tumbs ? "flex  flex-row justify-between" : "flex flex-col"}>
+    <div
+      className={
+        tumbs ? "flex  flex-row justify-between mt-12" : "flex flex-col mt-12 "
+      }
+    >
       <div
         className={
           !tumbs
@@ -24,7 +29,7 @@ function RestaurantSection() {
             : "restaurant_section relative bg-gray-200 w-auto"
         }
       >
-        <div className="container h-full">
+        <div className="container ">
           <article className="inner  py-16 text-lg">
             <p>
               <strong>ATLAS BISTRO</strong>

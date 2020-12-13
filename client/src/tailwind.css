@@ -86,3 +86,8 @@
 header {
   height: 120px;
 }
+
+.px-13 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
