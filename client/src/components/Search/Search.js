@@ -1,12 +1,18 @@
 import React, { useLayoutEffect, useState, useRef } from "react";
-import { Controller, useForm, useWatch } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 import "react-datepicker/dist/react-datepicker.css";
 import Calendar from "./Calendar";
 import Guests from "./Guests";
+import AdultsChildren from "./AdultsChildren";
+import { useHistory } from "react-router-dom";
 
 const Search = () => {
   const { handleSubmit, control } = useForm();
-  const onSubmit = (data) => console.log(data);
+  let history = useHistory();
+  const onSubmit = (data) => {
+    history.push("/booking");
+    console.log(data);
+  };
   const containerRef = useRef();
   const [hidden, setHidden] = useState(true);
 
@@ -25,20 +31,8 @@ const Search = () => {
     return () => document.removeEventListener("click", eventHandler);
   }, []);
 
-  const {adults, children} = useWatch({
-    control,
-    name: ["adults", "children"]
-  });
-
-  const adultsPresentation = {
-    one: 'взрослый',
-    few: 'взрослых',
-    many: 'взрослых'
-  }
-
-  const adultsPluralRule = new Intl.PluralRules('ru-RU').select(adults)
   return (
-    <div className="flex search-section -my-10 mx-auto h-20 border-black justify-between text-grey text-lg">
+    <div className="flex search-section -my-10 mx-auto h-20 border-black justify-between text-grey text-lg z-30">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="w-full h-full border-black flex justify-between"
@@ -56,7 +50,7 @@ const Search = () => {
             onClick={toggleGuests}
             ref={containerRef}
           >
-            {adults} {adultsPresentation[adultsPluralRule]} {children}
+            <AdultsChildren control={control} />
             <div
               className={`flex flex-col absolute search-guests pointer-events-none mt-5 p-5 w-72 left-0 right-0 z-30 bg-white text-grey ${
                 hidden ? "hidden" : "flex"
