@@ -15,6 +15,7 @@ import OfficesPage from "./pages/OfficesPage";
 import Footer from "./components/Footer";
 import TermsOfUsePage from "./pages/TermsOfUsePage";
 import PolicyPage from "./components/Policy"
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/to-clients" component={ToClients} />
           <Route path="/loyalty" component={LoyaltyPage} />
           <Route path="/discounts" component={DiscountsPage} />
+          <Route path="/about" component={AboutPage} />
           {/* <Route path="/about" component={About} /> */}
           <Route path="/polisy" component={PolicyPage} />
           <Route exact path="/contacts" component={ContactsPage} />
