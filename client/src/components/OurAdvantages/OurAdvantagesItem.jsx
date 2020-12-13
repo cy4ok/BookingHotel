@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function OurAdvantagesItem ({ icon, title, text }) {
   return (
     <div className="advantages-item relative pl-16 mb-12">
@@ -14,6 +13,5 @@ function OurAdvantagesItem ({ icon, title, text }) {
     </div>
   );
 }
-
 
 export default OurAdvantagesItem;
