@@ -31,7 +31,7 @@ function App() {
           <Route path="/discounts" component={DiscountsPage} />
           <Route path="/about" component={AboutPage} />
           {/* <Route path="/about" component={About} /> */}
-          <Route path="/polisy" component={PolicyPage} />
+          <Route path="/policy" component={PolicyPage} />
           <Route exact path="/contacts" component={ContactsPage} />
           <Route exact path="/offices" component={OfficesPage} />
           <Route exact path="/termsofuse" component={TermsOfUsePage} />
