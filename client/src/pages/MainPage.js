@@ -6,7 +6,6 @@ import Offer from "../components/Offer";
 import CorpOffer from "../components/CorpOffer/CorpOffer";
 import Search from "../components/Search/Search";
 
-
 const MainPage = () => {
   return (
     <>
@@ -20,7 +19,6 @@ const MainPage = () => {
       <ArtStudio />
       <CorpOffer />
       <Discounts title="Текущие акции" />
-      
     </>
   );
 };

@@ -1,6 +1,6 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-const Guests = ({ value, onChange, ...rest }) => (
+const Guests = forwardRef(({ value, onChange, ...rest }, ref) => (
   <div className="flex w-1/3 pointer-events-auto">
     <button
       type="button"
@@ -22,6 +22,7 @@ const Guests = ({ value, onChange, ...rest }) => (
     <button
       type="button"
       className="flex justify-center items-center text-2xl search-btn-circle focus:outline-none outline-none search-btn-circle-plus cursor-pointer bg-btnGold text-white"
+      ref={ref}
       onClick={() => {
         onChange(value + 1);
       }}
@@ -29,6 +30,8 @@ const Guests = ({ value, onChange, ...rest }) => (
       +
     </button>
   </div>
-);
+));
+
+Guests.displayName = 'Guests';
 
 export default Guests;

@@ -1,18 +1,36 @@
 import React, { useLayoutEffect, useState, useRef } from "react";
 import { Controller, useForm } from "react-hook-form";
-import "react-datepicker/dist/react-datepicker.css";
 import Calendar from "./Calendar";
 import Guests from "./Guests";
 import AdultsChildren from "./AdultsChildren";
 import { useHistory } from "react-router-dom";
+import { formatISO } from "date-fns";
+import addDays from "date-fns/addDays";
 
-const Search = () => {
-  const { handleSubmit, control } = useForm();
+const Search = ({ initialState }) => {
+  const { handleSubmit, control } = useForm({
+    defaultValues: {
+      adults: initialState?.adults || 0,
+      children: initialState?.children || 0,
+    },
+  });
   let history = useHistory();
+
   const onSubmit = (data) => {
-    history.push("/booking");
-    console.log(data);
+    const periodFrom = data.dates[0].getTime() === 0 ? new Date() : data.dates[0];
+    const periodTo = data.dates[1].getTime() === 0 ? addDays(new Date(), 3) : data.dates[1];
+    const adults = data.adults;
+    const children = data.children;
+
+    const urlParams = new URLSearchParams();
+    if (periodFrom) urlParams.set("periodFrom", formatISO(periodFrom));
+    if (periodTo) urlParams.set("periodTo", formatISO(periodTo));
+    if (adults) urlParams.set("adults", adults);
+    if (children) urlParams.set("children", children);
+
+    history.push(`/booking?${urlParams.toString()}`);
   };
+
   const containerRef = useRef();
   const [hidden, setHidden] = useState(true);
 
@@ -40,11 +58,13 @@ const Search = () => {
         <Controller
           as={Calendar}
           control={control}
-          defaultValue={""}
+          defaultValue={
+            initialState ? [initialState.periodFrom, initialState.periodTo] : ""
+          }
           name="dates"
           className="input"
         />
-        <div className="w-1/2 flex">
+        <div className="w-1/2 flex z-50">
           <div
             className="flex relative justify-center items-center border-l bg-white border-gray-300 h-full w-3/5 cursor-pointer text-gray-500"
             onClick={toggleGuests}
@@ -62,7 +82,6 @@ const Search = () => {
                   as={<Guests />}
                   name="adults"
                   control={control}
-                  defaultValue={0}
                 />
               </div>
               <div className="flex w-full mt-5">
@@ -71,7 +90,6 @@ const Search = () => {
                   as={<Guests />}
                   name="children"
                   control={control}
-                  defaultValue={0}
                 />
               </div>
             </div>
