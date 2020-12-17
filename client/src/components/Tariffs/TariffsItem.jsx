@@ -49,10 +49,19 @@ class TariffsItem extends React.Component {
             </span>
           </h2>
           <Details
-            onClick={this.toggleDetails}
             visibility={this.state.visible}
             breakfast={this.props.breakfast}
           />
+          <div className="text-sm text-gold font-bold">
+            <span 
+              className="cursor-pointer border-gold border-b border-dashed hover:text-goldHover"
+              onClick={() => {
+                this.toggleDetails();
+              }}
+            >
+              {visible === false ? "Свернуть" : ""}
+            </span>
+          </div>
           <div className="pt-6">
             {breakfast && (
               <div className="mb-2">
@@ -102,7 +111,7 @@ class TariffsItem extends React.Component {
             </div>
             <div className="btn-choice bg-btnGold px-3 h-8 text-white">
               <Link
-                //-!-!-!-!-!-!-!-!-!
+                //-!-!-!-настроить переход-!-!-!-!-!-!
                 to="/booking"
                 className="block flex justify-center items-center w-full h-full box-border"
                 guests={this.props.guests}
