@@ -1,0 +1,95 @@
+.superior-img{
+
+    background-image: url(../img/superior1.jpg);
+}
+.superior-img1{
+    width: 500px;
+    height: 450px;
+    border: none;
+    background-image: url(../img/superior1.jpg); 
+}
+.superior-img2{
+    width: 500px;
+    height: 450px;
+    background-image: url(../img/superior2.jpg); 
+}
+.superior-img3{
+    width: 500px;
+    height: 450px;
+    background-image: url(../img/superior3.jpg); 
+}
+.superior-img4{
+    width: 500px;
+    height: 450px;
+    background-image: url(../img/superior4.jpg); 
+}
+.superior-img5{
+    width: 500px;
+    height: 450px;
+    background-image: url(../img/superior5.jpg); 
+}
+.superior-img6{
+    width: 500px;
+    height: 450px;
+    background-image: url(../img/superior6.jpg); 
+}
+.superior-img7{
+    width: 500px;
+    height: 450px;
+    background-image: url(../img/superior7.jpg); 
+}
+.superior-img8{
+    width: 500px;
+    height: 450px;
+    background-image: url(../img/superior8.jpg); 
+}
+.superior-img9{
+    width: 500px;
+    height: 450px;
+    background-image: url(../img/superior9.jpg); 
+}
+.superior-img10{
+    width: 500px;
+    height: 450px;
+    background-image: url(../img/superior10.jpg); 
+}
+.superior-img11{
+    width: 500px;
+    height: 450px;
+    background-image: url(../img/superior11.jpg); 
+}
+.superior-img12{
+    width: 500px;
+    height: 450px;
+    background-image: url(../img/superior12.jpg); 
+}
+svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 3px;
+    opacity: 0.5;
+}
+
+
+.slick-slide {
+    position: relative;
+  }
+  
+  .slick-prev {
+    position: absolute;
+    left: 35px;
+    z-index: 5;
+  }
+  
+  .slick-next {
+    position: absolute;
+    right: 90px;
+    z-index: 5;
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    color: burlywood;
+    font-size: 78px;
+    z-index: 5;
+  }
