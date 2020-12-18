@@ -11,8 +11,15 @@ class Card extends Component {
       item: this.props.item,
     };
   }
+  enumerate(num, dec) {
+    if (num > 100) num = num % 100;
+    if (num <= 20 && num >= 10) return dec[2];
+    if (num > 20) num = num % 10;
+    return num === 1 ? dec[0] : num > 1 && num < 5 ? dec[1] : dec[2];
+  }
   render() {
-    const guests = this.props.guests;
+    const adult = this.props.adult;
+    const child = this.props.child;
     const days = this.props.days;
     return (
       <div
@@ -66,17 +73,21 @@ class Card extends Component {
                   {(this.props.item.priceDay * days).toLocaleString()}
                   <span className="text-carbonic opacity-75"> ₽</span>
                 </div>
-                <div className="text-xs">{`${days} ${
-                  days === 1 ? "ночь" : "ночи"
-                } / ${guests} ${guests === 1 ? "гость" : "гостя"} `}</div>
+                <div className="text-xs">
+                  {` 
+                    ${days + " " + this.enumerate(days, ["ночь", "ночи", "ночей"])} / 
+                    ${+adult + +child} ${this.enumerate(+adult + +child, ["гость", "гостя", "гостей"])} 
+                  `}
+                </div>
               </div>
               <div className="btn-choice bg-btnGold w-24 h-8 text-white">
                 <Link
                   //-!-!-!-!-!-!-!-!-!
                   to="/tariffs"
                   className="block flex justify-center items-center w-full h-full box-border"
-                  guests={this.props.guests}
-                  days={this.props.guests}
+                  adult={this.props.adult}
+                  child={this.props.child}
+                  days={this.props.days}
                 >
                   <span className="font-bold text-xs uppercase">Выбрать</span>
                 </Link>

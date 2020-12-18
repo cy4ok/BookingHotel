@@ -18,11 +18,10 @@ class ChoiceRooms extends React.Component {
             {cards.map((item) => (
               <Card
                 item={item}
-                handleClick={this.props.handleClick}
-                visibility={this.state.visible}
                 key={item.id}
-                guests={this.props.guests}
-                days={this.props.guests}
+                adult={this.props.adult}
+                child={this.props.child}
+                days={this.props.days}
               />
             ))}
           </div>

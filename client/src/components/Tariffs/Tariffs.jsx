@@ -17,15 +17,17 @@ class Tariffs extends React.Component {
           <div className="py-5">
             <TariffsItem
               title="Гибкий тариф без завтрака"
-              guests={this.props.guests}
-              days={this.props.guests}
+              adult={this.props.adult}
+              child={this.props.child}
+              days={this.props.days}
               priceday={this.props.priceday}
             />
             <TariffsItem
               title="Уникальное предложение от ARTSTUDIO c завтраком"
               breakfast="Завтраки"
-              guests={this.props.guests}
-              days={this.props.guests}
+              adult={this.props.adult}
+              child={this.props.child}
+              days={this.props.days}
               priceday={this.props.priceday}
             />
           </div>

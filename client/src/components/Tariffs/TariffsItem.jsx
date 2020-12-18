@@ -5,6 +5,7 @@ import Food from "./Icons/Food";
 import Cancel from "./Icons/Cancel";
 import Purse from "./Icons/Purse";
 import Adult from "./Icons/Adult";
+import Child from "./Icons/Child";
 
 class TariffsItem extends React.Component {
   constructor(props) {
@@ -19,22 +20,39 @@ class TariffsItem extends React.Component {
       visible: !this.state.visible,
     });
   }
-  getComponent(){
-    switch(this.props.guests){
+  getComponentAdult(){
+    switch(this.props.adult){
       case '2': return <span><Adult/><Adult/></span>; 
-      case '3': return <span><Adult/><Adult/><Adult/></span>; 
+      case '3': return <span>3<Adult/></span>; 
+      case '4': return <span>4<Adult/></span>; 
+      case '5': return <span>5<Adult/></span>; 
       default: return <Adult/>;
     }
+  }
+  getComponentChild(){
+    switch(this.props.child){
+      case '2': return <span><Child/><Child/></span>; 
+      case '3': return <span> 3<Child/></span>; 
+      case '4': return <span> 4<Child/></span>;
+      default: return <Child/>;
+    }
+  }
+  enumerate (num, dec) {
+    if (num > 100) num = num % 100;
+    if (num <= 20 && num >= 10) return dec[2];
+    if (num > 20) num = num % 10;
+    return num === 1 ? dec[0] : num > 1 && num < 5 ? dec[1] : dec[2];
   }
   render() {
     const breakfast = this.props.breakfast;
     const visible = !this.state.visible;
-    const guests = this.props.guests;
+    const adult = this.props.adult;
+    const child = this.props.child;
     const days = this.props.days;
     const priceday = this.props.priceday;
     return (
-      <div className="mb-6 grid grid-cols-3 py-4 px-6 bg-white">
-        <div className="col-span-2 text-carbonic">
+      <div className="mb-6 grid xl:grid-cols-3 md:grid-cols-2 py-4 px-6 bg-white">
+        <div className="xl:col-span-2 text-carbonic">
           <h2 className="text-gold">
             <span
               className="cursor-pointer text-3xl font-bold border-gold border-b border-dashed hover:text-goldHover"
@@ -92,12 +110,13 @@ class TariffsItem extends React.Component {
         </div>
 
         <div className="p-5 flex justify-end">
-          <div className="mt-8 mr-4 text-2xl">
-            {this.getComponent()}
+          <div className="mt-8 mr-4 text-2xl text-gold">
+            {this.getComponentAdult()}
+            {this.getComponentChild()}
             <span className="text-black font-bold">
               &nbsp;
               {breakfast
-                ? (days * priceday + guests * 500).toLocaleString()
+                ? (days * priceday + adult * 500 + child * 300).toLocaleString()
                 : (days * priceday).toLocaleString()}
             </span>
             <span className="text-carbonic opacity-75">₽</span>
@@ -106,7 +125,7 @@ class TariffsItem extends React.Component {
             <div className="mb-2">
               Стоимость за &nbsp;
               <span className="font-bold">
-                {days} {days === 1 ? "ночь" : "ночи"}
+                {days + " " + this.enumerate(days, ["ночь", "ночи", "ночей"])}
               </span>
             </div>
             <div className="btn-choice bg-btnGold px-3 h-8 text-white">
@@ -114,8 +133,9 @@ class TariffsItem extends React.Component {
                 //-!-!-!-настроить переход-!-!-!-!-!-!
                 to="/booking"
                 className="block flex justify-center items-center w-full h-full box-border"
-                guests={this.props.guests}
-                days={this.props.guests}
+                adult={this.props.adult}
+                child={this.props.child}
+                days={this.props.days}
               >
                 <span className="font-bold text-xs uppercase">
                   Забронировать
