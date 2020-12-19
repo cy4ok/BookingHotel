@@ -13,7 +13,9 @@ import ContactsPage from "./pages/ContactsPage";
 import BookingPage from "./pages/BookingPage";
 import OfficesPage from "./pages/OfficesPage";
 import Footer from "./components/Footer";
+import TermsOfUsePage from "./pages/TermsOfUsePage";
 import PolicyPage from "./components/Policy"
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
@@ -27,10 +29,12 @@ function App() {
           <Route path="/to-clients" component={ToClients} />
           <Route path="/loyalty" component={LoyaltyPage} />
           <Route path="/discounts" component={DiscountsPage} />
+          <Route path="/about" component={AboutPage} />
           {/* <Route path="/about" component={About} /> */}
-          <Route path="/polisy" component={PolicyPage} />
+          <Route path="/policy" component={PolicyPage} />
           <Route exact path="/contacts" component={ContactsPage} />
           <Route exact path="/offices" component={OfficesPage} />
+          <Route exact path="/termsofuse" component={TermsOfUsePage} />
         </Switch>
         <Footer />
       </Router>
