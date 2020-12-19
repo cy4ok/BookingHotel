@@ -27,8 +27,8 @@ class Header extends React.Component {
     const address = this.props.address;
     return (
       <div
-        className={`h-56 relative w-full flex items-end bg-${bgHeader} bg-no-repeat bg-cover bg-center`}
-        style={bgHeader ? { height: "620px" } : { height: "320px" }}
+        className={`relative w-full flex items-end bg-${bgHeader} bg-no-repeat bg-cover bg-center`}
+        style={bgHeader ? { height: "620px" } : { height: "270px" }}
       >
         <header
           className="z-100 absolute top-0 left-0 w-full py-8 bg-secondary"
@@ -58,14 +58,15 @@ class Header extends React.Component {
             </div>
           </div>
         </header>
-
-        <div className="container flex flex-col text-white pb-20">
-          <h4 className="mb-8 text-xs font-bold leading-5 tracking-wide">
-            {smallTitle}
-          </h4>
-          <h1 className="max-w-4xl text-6xl leading-none">{mainTitle}</h1>
-          <h4 className="text-lg leading-normal mt-4 mb-16">{address}</h4>
-        </div>
+        {bgHeader &&
+          <div className="container flex flex-col text-white pb-20">
+            <h4 className="mb-8 text-xs font-bold leading-5 tracking-wide">
+              {smallTitle}
+            </h4>
+            <h1 className="max-w-4xl text-6xl leading-none">{mainTitle}</h1>
+            <h4 className="text-lg leading-normal mt-4 mb-16">{address}</h4>
+          </div>
+        }
       </div>
     );
   }
