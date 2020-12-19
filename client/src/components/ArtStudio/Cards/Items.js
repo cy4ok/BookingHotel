@@ -42,7 +42,6 @@ const Items = [
   },
   {
     id: 2,
-    page: "MainPage",
     typeOfApartment: "Superior",
     area: 35,
     mainImg: Superior,
@@ -78,7 +77,6 @@ const Items = [
   },
   {
     id: 3,
-    page: "MainPage",
     typeOfApartment: "Deluxe",
     area: 43,
     mainImg: Deluxe,
@@ -149,7 +147,6 @@ const Items = [
   },
   {
     id: 5,
-    page: "MainPage",
     typeOfApartment: "Suite",
     area: 58,
     mainImg: Suite,
