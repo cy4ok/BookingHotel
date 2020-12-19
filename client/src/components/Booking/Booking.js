@@ -1,5 +1,6 @@
 import React from "react";
 import EmptyBox from "./EmptyBox";
+import ChoiceRooms from "../ChoiceRooms";
 
 const Booking = ({ apartments, isLoading, isError, error, isIdle }) => {
   console.log(apartments);
@@ -31,6 +32,7 @@ const Booking = ({ apartments, isLoading, isError, error, isIdle }) => {
           </div>
         )}
       </div>
+      <ChoiceRooms adult="1" child="1" />
     </div>
   );
 };
