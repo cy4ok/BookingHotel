@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-/* import SuperiorImage from "./SuperiorImage.jsx"; */
-import SuperiorItem from "./SuperiorItem.jsx"
 import IconMan from "../../../images/icons/IconMan";
 import IconTv from "../img/IconTv";
 import IconInternet from "../img/IconInternet";
@@ -48,17 +46,17 @@ import IconIroning from "../img/IconIroning";
 import IconKitchenStove from "../img/IconKitchenStove";
 import IconKettle from "../img/IconKettle";
 import IconArow from "../img/IconArow";
-import "./style.css"
-import Superior1 from "./Superior1.jsx"
+import "./style.css";
+/* import FotoGallery from "./FotoGallery"; */
+import SuperiorItem from "./SuperiorItem.jsx"
 
 function Superior() {
     return (
         <div className="m-6 h-auto">
             <div className="flex flex-row justify-between">
-                <div className="p-2 w-1/2">
-                   {/*  <SuperiorImage /> */}
+                <div className="p-2 w-1/2 h-1/3">
                     <SuperiorItem />
-                    <Superior1 />
+                   {/*  <FotoGallery /> */}
                 </div>
                 <div className="mx-5">
                     <div className=" ">
@@ -67,7 +65,7 @@ function Superior() {
                             <div className="flex flex-row font-bold text-base items-center">
                                 <IconMan />   Вместимость до 2 мест</div>
                             <div className="flex flex-row justify-between w-1/2">
-                                <div className="flex flex-row">от <div className="text-2xl font-bold ml-3"> {/* {items.price} */} 6300 
+                                <div className="flex flex-row">от <div className="text-2xl font-bold ml-3"> {/* {items.price} */} 6300
                                  <span class="font-normal text-opacity-60">₽</span></div>
                                 </div>
                                 <div class="btn bg-btnGold w-32 h-10 text-white text-center font-bold z-20 relative"><a class="flex justify-center items-center w-full h-full block box-border" href="/booking"><span>Выбрать</span></a></div>

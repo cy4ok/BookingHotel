@@ -3,6 +3,7 @@ import Header from "../components/Header";
 /* import Infrastructure from "../components/Infrastructure"; */
 import Superior from "../components/NumberCard/Superior/Superior.jsx";
 
+
 const ApartmentsPage = () => {
   return (
     <>

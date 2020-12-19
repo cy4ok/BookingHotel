@@ -3,14 +3,13 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import "./style.css";
 
-/* const SuperiorItem = () => { */
+ 
 class SuperiorItem extends Component {
     constructor(props) {
         super(props);
         this.state = {
         };
     }
-
 
     render() {
         const settings = {
@@ -20,14 +19,6 @@ class SuperiorItem extends Component {
               slidesToShow: 1,
               slidesToScroll: 1,
               mouseDragEnabled: true, 
-              /* arrows: true, 
-              key: true,
-           /*  duration: 400,
-            startIndex: 1,
-            fadeOutAnimation: true,
-            mouseDragEnabled: true,
-            playButtonEnabled: false, */
-            infinite: true,
         };
         return (
 
@@ -50,5 +41,8 @@ class SuperiorItem extends Component {
             </div>
         );
     }
-}
+} 
+
+const handleDragStart = (e) => e.preventDefault();
+
 export default SuperiorItem;
