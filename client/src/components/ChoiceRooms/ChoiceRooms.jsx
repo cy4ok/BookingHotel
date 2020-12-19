@@ -10,8 +10,8 @@ class ChoiceRooms extends React.Component {
     this.state = {
       cards: Items,
       nights: differenceInDays(
-        new Date("2020-08-13T07:22:03.498Z"),
-        new Date("2020-08-09T09:30:20.914Z")
+        new Date(2020, 12, 25, 12, 0),
+        new Date(2020, 12, 21, 14, 0)
       ),
     };
   }
