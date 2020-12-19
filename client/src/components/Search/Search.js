@@ -14,7 +14,7 @@ const Search = ({ initialState }) => {
       children: initialState?.children || 0,
     },
   });
-  let history = useHistory();
+  const history = useHistory();
 
   const onSubmit = (data) => {
     const periodFrom = data.dates[0].getTime() === 0 ? new Date() : data.dates[0];

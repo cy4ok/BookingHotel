@@ -7,7 +7,7 @@ import Header from "../components/Header";
 import Search from "../components/Search";
 
 const BookingPage = () => {
-  let location = useLocation();
+  const location = useLocation();
 
   const urlParams = new URLSearchParams(location.search);
   const periodFrom = urlParams.get("periodFrom");
