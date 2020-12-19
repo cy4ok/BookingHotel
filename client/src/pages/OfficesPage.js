@@ -4,10 +4,10 @@ import Offices from "../components/Offices/Offices";
 
 const OfficesPage = () => {
   return (
-    <div id="OfficesPage">
-      <Header title="Офисы в аренду" />
+    <>
+      <Header bgHeader="header-bg-4" mainTitle="Офисы в аренду" />
       <Offices />
-    </div>
+    </>
   );
 };
 

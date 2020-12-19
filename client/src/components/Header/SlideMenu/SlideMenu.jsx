@@ -18,7 +18,7 @@ class SlideMenu extends Component {
             <SlideItem name="Бронировать апартаменты" url="/booking" />
             <SlideItem name="Корпоративным клиентам" url="/to-clients" />
             <SlideItem name="Программа лояльности" url="/loyalty" />
-            <SlideItem name="Офисы в аренду" url="/" />
+            <SlideItem name="Офисы в аренду" url="/offices" />
             <SlideItem name="Ресторан ATLAS BISTRO" url="/restaurant" />
             <SlideItem name="Акции" url="/discounts" />
             <SlideItem name="О RBI PM" url="/about" />
