@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import Group from "../../Tariffs/Icons/Group";
 import Area from "../../Tariffs/Icons/Area";
 import "./Card.css";
@@ -10,6 +9,12 @@ class Card extends Component {
     this.state = {
       item: this.props.item,
     };
+    this.toggleTariffs = this.toggleTariffs.bind(this);
+  }
+  toggleTariffs() {
+    this.setState({
+      visible: !this.state.visible,
+    });
   }
   enumerate(num, dec) {
     if (num > 100) num = num % 100;
@@ -23,7 +28,7 @@ class Card extends Component {
     const nights = this.props.nights;
     return (
       <div
-        className="book-room flex-1 max-w-sm m-1 cursor-pointer bg-white group shadow hover:shadow-xl"
+        className="flex-1 max-w-sm m-1 cursor-pointer bg-white group shadow hover:shadow-xl"
         key={this.props.item.id}
       >
         <div className="card-item box-border min-w-64 text-carbonic">
@@ -81,16 +86,19 @@ class Card extends Component {
                 </div>
               </div>
               <div className="btn-choice bg-btnGold w-24 h-8 text-white">
-                <Link
-                  //-!-!-!-!-!-!-!-!-!
-                  to="/tariffs"
-                  className="block flex justify-center items-center w-full h-full box-border"
+                <div
+                  className="flex justify-center items-center w-full h-full box-border"
                   adult={this.props.adult}
                   child={this.props.child}
                   nights={this.props.nights}
+                  priceday={this.props.priceday}
+                  visibility={this.state.visible}
+                  onClick={() => {
+                    this.toggleTariffs();
+                  }}
                 >
                   <span className="font-bold text-xs uppercase">Выбрать</span>
-                </Link>
+                </div>
               </div>
             </div>
           </div>
