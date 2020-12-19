@@ -1,58 +1,38 @@
-import React, { useEffect, useState } from "react";
-import DatePicker, { registerLocale, setDefaultLocale } from "react-datepicker";
-import ru from "date-fns/locale/ru";
-import "react-datepicker/dist/react-datepicker.css";
+import React, { forwardRef } from "react";
+import Flatpickr from "react-flatpickr";
+import rangePlugin from "flatpickr/dist/plugins/rangePlugin";
+import { Russian } from "flatpickr/dist/l10n/ru.js";
+import "flatpickr/dist/flatpickr.min.css";
 
-registerLocale("ru", ru);
-setDefaultLocale("ru");
-
-const Calendar = ({ onChange }) => {
-  const [startDate, setStartDate] = useState("");
-  const [endDate, setEndDate] = useState("");
-
-  useEffect(() => {
-    onChange([startDate, endDate]);
-  }, [onChange, startDate, endDate]);
-
-  console.log(startDate, endDate);
-
+const Calendar = forwardRef(({ onChange, value: [from, to] }, ref) => {
   return (
     <div className="flex w-1/2 h-full text-grey bg-white">
-      <DatePicker
-        selected={startDate}
-        onChange={(date) => {
-          setStartDate(date);
+      <Flatpickr
+        className="h-full w-1/2 search-input text-center cursor-pointer focus:outline-none z-20"
+        allowinput="true"
+        placeholder="Прибытие"
+        ref={ref}
+        onChange={onChange}
+        options={{
+          dateFormat: "d F Y",
+          minDate: "today",
+          mode: "range",
+          locale: Russian,
+          showMonths: 2,
+          defaultDate: [from, to],
+          plugins: [new rangePlugin({ input: "#secondRangeInput" })],
         }}
-        selectsStart
-        startDate={startDate}
-        endDate={endDate}
-        minDate={new Date()}
-        placeholderText="Прибытие"
-        showDisabledMonthNavigation
-        monthsShown={2}
-        locale={ru}
-        dateFormat="dd MMMM yyyy"
-        className="h-full w-1/2 search-input text-center cursor-pointer"
-        />
-      <DatePicker
-        selected={endDate}
-        onChange={(date) => {
-          setEndDate(date);
-          console.log(date);
-        }}
-        selectsEnd
-        startDate={startDate}
-        endDate={endDate}
-        minDate={new Date()}
-        placeholderText="Отъезд"
-        showDisabledMonthNavigation
-        monthsShown={2}
-        locale={ru}
-        dateFormat="dd MMMM yyyy"
-        className="h-full w-1/2 search-input text-center cursor-pointer"
+      />
+      <input
+        placeholder="Выезд"
+        id="secondRangeInput"
+        onChange={onChange}
+        className="h-full w-1/2 search-input text-center cursor-pointer focus:outline-none z-20"
       />
     </div>
   );
-};
+});
+
+Calendar.displayName = 'Calendar';
 
 export default Calendar;
