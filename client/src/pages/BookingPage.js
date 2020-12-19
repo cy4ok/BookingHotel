@@ -49,7 +49,6 @@ const BookingPage = () => {
   return (
     <>
       <Header title="Заявка на бронирование" />
-      <ChoiceRooms adult="2" child="" />
       <Search initialState={searchState} />
       <Booking
         apartments={data}
@@ -58,6 +57,7 @@ const BookingPage = () => {
         error={error}
         isIdle={isIdle}
       />
+      <ChoiceRooms adult="2" child="" />
     </>
   );
 };
