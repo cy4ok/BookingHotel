@@ -19,7 +19,7 @@ class Tariffs extends React.Component {
               title="Гибкий тариф без завтрака"
               adult={this.props.adult}
               child={this.props.child}
-              days={this.props.days}
+              nights={this.props.nights}
               priceday={this.props.priceday}
             />
             <TariffsItem
@@ -27,7 +27,7 @@ class Tariffs extends React.Component {
               breakfast="Завтраки"
               adult={this.props.adult}
               child={this.props.child}
-              days={this.props.days}
+              nights={this.props.nights}
               priceday={this.props.priceday}
             />
           </div>

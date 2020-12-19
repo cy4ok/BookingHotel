@@ -31,10 +31,11 @@ class TariffsItem extends React.Component {
   }
   getComponentChild(){
     switch(this.props.child){
+      case '1': return <span><Child/></span>; 
       case '2': return <span><Child/><Child/></span>; 
       case '3': return <span> 3<Child/></span>; 
       case '4': return <span> 4<Child/></span>;
-      default: return <Child/>;
+      default: return;
     }
   }
   enumerate (num, dec) {
@@ -48,7 +49,7 @@ class TariffsItem extends React.Component {
     const visible = !this.state.visible;
     const adult = this.props.adult;
     const child = this.props.child;
-    const days = this.props.days;
+    const nights = this.props.nights;
     const priceday = this.props.priceday;
     return (
       <div className="mb-6 grid xl:grid-cols-3 md:grid-cols-2 py-4 px-6 bg-white">
@@ -116,8 +117,8 @@ class TariffsItem extends React.Component {
             <span className="text-black font-bold">
               &nbsp;
               {breakfast
-                ? (days * priceday + adult * 500 + child * 300).toLocaleString()
-                : (days * priceday).toLocaleString()}
+                ? (nights * priceday + adult * 500 + child * 300).toLocaleString()
+                : (nights * priceday).toLocaleString()}
             </span>
             <span className="text-carbonic opacity-75">₽</span>
           </div>
@@ -125,7 +126,7 @@ class TariffsItem extends React.Component {
             <div className="mb-2">
               Стоимость за &nbsp;
               <span className="font-bold">
-                {days + " " + this.enumerate(days, ["ночь", "ночи", "ночей"])}
+                {nights + " " + this.enumerate(nights, ["ночь", "ночи", "ночей"])}
               </span>
             </div>
             <div className="btn-choice bg-btnGold px-3 h-8 text-white">
@@ -135,7 +136,7 @@ class TariffsItem extends React.Component {
                 className="block flex justify-center items-center w-full h-full box-border"
                 adult={this.props.adult}
                 child={this.props.child}
-                days={this.props.days}
+                nights={this.props.nights}
               >
                 <span className="font-bold text-xs uppercase">
                   Забронировать

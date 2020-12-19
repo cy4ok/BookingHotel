@@ -1,4 +1,5 @@
 import React from "react";
+import differenceInDays from "date-fns/differenceInDays";
 import Items from "../ArtStudio/Cards/Items";
 import Card from "./Card/Card";
 
@@ -7,6 +8,10 @@ class ChoiceRooms extends React.Component {
     super(props);
     this.state = {
       cards: Items,
+      nights: differenceInDays(
+        new Date("2020-08-13T07:22:03.498Z"),
+        new Date("2020-08-09T09:30:20.914Z")
+      )
     };
   }
   render() {
@@ -21,7 +26,7 @@ class ChoiceRooms extends React.Component {
                 key={item.id}
                 adult={this.props.adult}
                 child={this.props.child}
-                days={this.props.days}
+                nights={this.state.nights}
               />
             ))}
           </div>

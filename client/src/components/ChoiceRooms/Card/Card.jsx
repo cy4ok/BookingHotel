@@ -20,7 +20,7 @@ class Card extends Component {
   render() {
     const adult = this.props.adult;
     const child = this.props.child;
-    const days = this.props.days;
+    const nights = this.props.nights;
     return (
       <div
         className="book-room flex-1 max-w-sm m-1 cursor-pointer bg-white group shadow hover:shadow-xl"
@@ -70,12 +70,12 @@ class Card extends Component {
               <div>
                 <div className="text-black font-bold text-lg">
                   <span className="text-xs">от </span>
-                  {(this.props.item.priceDay * days).toLocaleString()}
+                  {(this.props.item.priceDay * nights).toLocaleString()}
                   <span className="text-carbonic opacity-75"> ₽</span>
                 </div>
                 <div className="text-xs">
                   {` 
-                    ${days + " " + this.enumerate(days, ["ночь", "ночи", "ночей"])} / 
+                    ${nights + " " + this.enumerate(nights, ["ночь", "ночи", "ночей"])} / 
                     ${+adult + +child} ${this.enumerate(+adult + +child, ["гость", "гостя", "гостей"])} 
                   `}
                 </div>
@@ -87,7 +87,7 @@ class Card extends Component {
                   className="block flex justify-center items-center w-full h-full box-border"
                   adult={this.props.adult}
                   child={this.props.child}
-                  days={this.props.days}
+                  nights={this.props.nights}
                 >
                   <span className="font-bold text-xs uppercase">Выбрать</span>
                 </Link>

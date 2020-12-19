@@ -9,8 +9,8 @@ const BookingPage = () => {
     <>
       <Header title="Заявка на бронирование" />
       <Booking /> 
-      <ChoiceRooms guests="2" days="2" />
-      <Tariffs guests="2" days="2" priceday="2900" />
+      <ChoiceRooms adult="2" child="" />
+      <Tariffs adult="2" child="" nights="3" priceday="2900" />
     </>
   );
 };
