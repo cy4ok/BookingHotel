@@ -17,8 +17,8 @@ const Search = ({ initialState }) => {
   const history = useHistory();
 
   const onSubmit = (data) => {
-    const periodFrom = data.dates[0].getTime() === 0 ? new Date() : data.dates[0];
-    const periodTo = data.dates[1].getTime() === 0 ? addDays(new Date(), 3) : data.dates[1];
+    const periodFrom = data.dates[0]?.getTime() ? new Date() : data.dates[0];
+    const periodTo = data.dates[1]?.getTime() ? addDays(new Date(), 3) : data.dates[1];
     const adults = data.adults;
     const children = data.children;
 
