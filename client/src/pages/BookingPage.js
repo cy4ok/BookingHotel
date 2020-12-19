@@ -57,7 +57,7 @@ const BookingPage = () => {
         error={error}
         isIdle={isIdle}
       />
-      <ChoiceRooms adult="2" child="" />
+      <ChoiceRooms adult={adults} child={children} periodFrom={periodFrom} periodTo={periodTo} />
     </>
   );
 };
