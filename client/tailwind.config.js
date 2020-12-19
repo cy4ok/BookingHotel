@@ -21,6 +21,8 @@ module.exports = {
           "url('components/Header/images/bg-2.jpg')",
         "header-bg-3":
           "url('components/Header/images/bg-3.jpg')",
+        "header-bg-4":
+          "url('components/Header/images/bg-4.jpg')",
       }),
       colors: {
         brown: "#ca9d56",
