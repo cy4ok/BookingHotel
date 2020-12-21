@@ -17,8 +17,10 @@ const Search = ({ initialState }) => {
   const history = useHistory();
 
   const onSubmit = (data) => {
-    const periodFrom = data.dates[0].getTime() === 0 ? new Date() : data.dates[0];
-    const periodTo = data.dates[1].getTime() === 0 ? addDays(new Date(), 3) : data.dates[1];
+    const periodFrom =
+      data.dates[0].getTime() === 0 ? new Date() : data.dates[0];
+    const periodTo =
+      data.dates[1].getTime() === 0 ? addDays(new Date(), 3) : data.dates[1];
     const adults = data.adults;
     const children = data.children;
 
@@ -32,10 +34,16 @@ const Search = ({ initialState }) => {
   };
 
   const containerRef = useRef();
+  const spanRef = useRef();
   const [hidden, setHidden] = useState(true);
 
   const toggleGuests = (event) => {
-    if (event.target === containerRef.current) setHidden(!hidden);
+    console.log(event.target);
+    if (
+      event.target === containerRef.current ||
+      event.target === spanRef.current
+    )
+      setHidden(!hidden);
   };
 
   useLayoutEffect(() => {
@@ -70,7 +78,11 @@ const Search = ({ initialState }) => {
             onClick={toggleGuests}
             ref={containerRef}
           >
-            <AdultsChildren control={control} />
+            <AdultsChildren
+              control={control}
+              onClick={toggleGuests}
+              ref={spanRef}
+            />
             <div
               className={`flex flex-col absolute search-guests pointer-events-none mt-5 p-5 w-72 left-0 right-0 z-30 bg-white text-grey ${
                 hidden ? "hidden" : "flex"
@@ -78,19 +90,11 @@ const Search = ({ initialState }) => {
             >
               <div className="flex w-full">
                 <div className="w-2/3">Взрослые</div>
-                <Controller
-                  as={<Guests />}
-                  name="adults"
-                  control={control}
-                />
+                <Controller as={<Guests />} name="adults" control={control} />
               </div>
               <div className="flex w-full mt-5">
                 <div className="w-2/3">Дети</div>
-                <Controller
-                  as={<Guests />}
-                  name="children"
-                  control={control}
-                />
+                <Controller as={<Guests />} name="children" control={control} />
               </div>
             </div>
           </div>
