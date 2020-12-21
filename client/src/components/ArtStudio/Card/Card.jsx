@@ -31,8 +31,8 @@ class Card extends Component {
           >
             <img
               className="card__img w-full"
-              src={`${this.state.item.mainImg}`}
-              alt="Deluxe"
+              src={this.state.item.mainImg}
+              alt={this.state.item.typeOfApartment}
             ></img>
           </div>
           <div
