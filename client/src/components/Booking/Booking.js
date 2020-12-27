@@ -1,8 +1,8 @@
 import React from "react";
 import EmptyBox from "./EmptyBox";
-import ChoiceRooms from "../ChoiceRooms";
+import Card from "../ChoiceRooms/Card";
 
-const Booking = ({ apartments, isLoading, isError, error, isIdle }) => {
+const Booking = ({ apartments, isLoading, isError, error, isIdle, adult, child }) => {
   console.log(apartments);
 
   return (
@@ -25,14 +25,20 @@ const Booking = ({ apartments, isLoading, isError, error, isIdle }) => {
             </div>
           </div>
         ) : (
-          <div className="flex justify-between">
+          <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4 py-8 montserrat">
             {apartments.map((item, idx) => {
-              return <div key={idx}>{item.typeOfApartment}</div>;
+              return <div key={idx}>
+                <Card
+                  item={item}
+                  key={item.id}
+                  adult={adult}
+                  child={child}
+                />
+              </div>;
             })}
           </div>
         )}
       </div>
-      <ChoiceRooms adult="1" child="1" />
     </div>
   );
 };

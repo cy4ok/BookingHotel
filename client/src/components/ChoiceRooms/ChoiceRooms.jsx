@@ -14,12 +14,18 @@ class ChoiceRooms extends React.Component {
         this.props.periodTo
       ),
     };
+    this.toggleTariffs = this.toggleTariffs.bind(this);
+  }
+  toggleTariffs() {
+    this.setState({
+      visible: !this.state.visible,
+    });
   }
   render() {
     const cards = this.state.cards;
     return (
       <div className="w-full bg-fourth">
-        <div className="container pb-12 book-room">
+        <div className="container pb-12 montserrat">
           <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4 py-8">
             {cards.map((item) => (
               <Card
