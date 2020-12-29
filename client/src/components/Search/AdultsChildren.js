@@ -2,7 +2,6 @@ import React, { forwardRef } from "react";
 import { useWatch } from "react-hook-form";
 
 const AdultsChildren = forwardRef(({ control, onClick }, ref) => {
-  console.log(ref);
   const { adults, children } = useWatch({
     control,
     name: ["adults", "children"],

@@ -2,7 +2,6 @@ import React from "react";
 import EmptyBox from "./EmptyBox";
 
 const Booking = ({ apartments, isLoading, isError, error, isIdle }) => {
-  console.log(apartments);
 
   return (
     <div className="w-full pt-12 pb-16 bg-fourth">
