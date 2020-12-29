@@ -56,7 +56,7 @@ function Superior() {
             <div className="flex flex-row justify-between">
                 <div className="p-2 w-1/2 h-1/3">
                     <SuperiorItem />
-                   {/*  <FotoGallery /> */}
+                    {/*  <FotoGallery /> */}
                 </div>
                 <div className="mx-5">
                     <div className=" ">
@@ -73,8 +73,7 @@ function Superior() {
                         </div>
                         <p className="font-bold my-3">Площадь 35 кв. м</p>
                         <div className="">Апартамент с одной спальней, кухня, в некоторых номерах есть гардеробная.
-                        Кровать King Size или 2 односпальных кровати.
-</div>
+                        Кровать King Size или 2 односпальных кровати.</div>
                     </div>
                     <div className="bg-fourth flex flex-row my-5">
                         <div className="w-1/2">
@@ -155,10 +154,7 @@ function Superior() {
                     <Link><p className="flex flex-row font-bold text-brown text-lg align-center">Свернуть описание <IconArow /> </p></Link>
                 </div>
             </div>
-
         </div>
-
-
     );
 };
 export default Superior;
