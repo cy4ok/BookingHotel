@@ -8,7 +8,7 @@ const Guests = forwardRef(({ value, onChange, ...rest }, ref) => (
         value === 0 ? "opacity-50 cursor-default" : "opacity-100"
       }`}
       onClick={() => {
-        if (value > 0) onChange(value - 1);
+        if (Number(value) > 0) onChange(Number(value) - 1);
       }}
     >
       -
@@ -24,7 +24,7 @@ const Guests = forwardRef(({ value, onChange, ...rest }, ref) => (
       className="flex justify-center items-center text-2xl search-btn-circle focus:outline-none outline-none search-btn-circle-plus cursor-pointer bg-btnGold text-white"
       ref={ref}
       onClick={() => {
-        onChange(value + 1);
+        onChange(Number(value) + 1);
       }}
     >
       +

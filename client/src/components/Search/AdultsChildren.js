@@ -1,7 +1,7 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { useWatch } from "react-hook-form";
 
-const AdultsChildren = ({ control }) => {
+const AdultsChildren = forwardRef(({ control, onClick }, ref) => {
   const { adults, children } = useWatch({
     control,
     name: ["adults", "children"],
@@ -25,10 +25,18 @@ const AdultsChildren = ({ control }) => {
   const defaultLabel = "Гости";
   const label = [
     adults && `${adults} ${adultsPresentation[adultsPluralRule]}`,
-    children && `${children} ${childrenPresentation[childrenPluralRule]}`
-  ].filter(Boolean).join(' ');
+    children && `${children} ${childrenPresentation[childrenPluralRule]}`,
+  ]
+    .filter(Boolean)
+    .join(" ");
 
-  return <span>{label || defaultLabel}</span>;
-};
+  return (
+    <span onClick={onClick} ref={ref}>
+      {label || defaultLabel}
+    </span>
+  );
+});
+
+AdultsChildren.displayName = "AdultsChildren";
 
 export default AdultsChildren;
