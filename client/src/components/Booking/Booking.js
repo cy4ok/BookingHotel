@@ -1,9 +1,15 @@
 import React from "react";
+import differenceInDays from "date-fns/differenceInDays";
 import EmptyBox from "./EmptyBox";
 import Card from "../ChoiceRooms/Card";
 
-const Booking = ({ apartments, isLoading, isError, error, isIdle, adult, child }) => {
+const Booking = ({ apartments, isLoading, isError, error, isIdle, adult, child, periodFrom, periodTo }) => {
   console.log(apartments);
+
+  const nights = differenceInDays(
+    new Date(periodTo),
+    new Date(periodFrom)
+  );
 
   return (
     <div className="w-full pt-12 pb-16 bg-fourth">
@@ -33,6 +39,7 @@ const Booking = ({ apartments, isLoading, isError, error, isIdle, adult, child }
                   key={item.id}
                   adult={adult}
                   child={child}
+                  nights={nights}
                 />
               </div>;
             })}

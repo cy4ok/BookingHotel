@@ -56,7 +56,6 @@ const BookingPage = () => {
         isError={isError}
         error={error}
         isIdle={isIdle}
-
         adult={adults}
         child={children}
         periodFrom={periodFrom}

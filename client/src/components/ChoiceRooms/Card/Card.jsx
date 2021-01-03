@@ -67,7 +67,7 @@ class Card extends Component {
                   <div className="mr-2">
                     <Area />
                   </div>
-                  <div className="mt-1">{`${this.props.item.area.toLocaleString()} кв. м`}</div>
+                  <span className="mt-1">{`${this.props.item.area.toLocaleString()} кв. м`}</span>
                 </div>
               </div>
             </div>
