@@ -35,7 +35,7 @@ class ArtStudio extends Component {
           <div>
             <Slider />
           </div>
-          <Cards />
+          <Cards title="ARTSTUDIO Nevsky, " />
         </div>
       </div>
     );

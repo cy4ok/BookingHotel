@@ -31,8 +31,8 @@ class Card extends Component {
           >
             <img
               className="card__img w-full"
-              src={`${this.state.item.mainImg}`}
-              alt="Deluxe"
+              src={this.state.item.mainImg}
+              alt={this.state.item.typeOfApartment}
             ></img>
           </div>
           <div
@@ -41,12 +41,14 @@ class Card extends Component {
               this.toggleModal();
             }}
           >
-            <div className="card__title text-gray-800 group-hover:text-yellow-700 text-left text-2xl">
-              {this.props.title}
-              <span className="block w-full">
-                {this.props.item.typeOfApartment}
-              </span>
-            </div>
+            {this.props.title && (
+              <div className="card__title text-gray-800 group-hover:text-yellow-700 text-left text-2xl">
+                {this.props.title}
+              </div>
+            )}
+            <span className="block w-full">
+              {this.props.item.typeOfApartment}
+            </span>
             <div className="card__info text-gray-700 mt-5">
               <ul className="flex infoList infoList--xs">
                 <li className="flex-1 grid__item">
@@ -67,7 +69,7 @@ class Card extends Component {
           <div className="btn bg-btnGold w-48 h-12  mt-12 text-white text-center font-bold z-20 relative">
             <Link
               to="/booking"
-              className="flex justify-center items-center w-full h-full block box-border"
+              className="flex justify-center items-center w-full h-full box-border"
             >
               <span>Бронировать</span>
             </Link>

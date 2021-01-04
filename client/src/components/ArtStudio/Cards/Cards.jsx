@@ -7,6 +7,7 @@ class Cards extends Component {
     super(props);
     this.state = {
       cards: Items,
+      title: this.props.title,
     };
   }
 
@@ -17,9 +18,8 @@ class Cards extends Component {
       <>
         <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 sm:flex sm:flex-wrap gap-y-16 pt-20">
           {cards.map((item) => ( 
-            item.page &&
             <Card
-              title="ARTSTUDIO Nevsky, "
+              title={this.props.title}
               item={item}
               handleClick={this.props.handleClick}
               visibility={this.state.visible}

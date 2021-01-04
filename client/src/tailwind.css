@@ -14,6 +14,8 @@
 
 .search-section {
   max-width: 1500px;
+  width: 100%;
+  padding: 0 50px;
 }
 
 .search-input {
@@ -28,7 +30,10 @@
   border-radius: 50%;
   width: 36px;
   height: 36px;
-  padding-top: 2px;
+}
+
+.search-btn-circle-plus {
+  padding-top: 3px;
 }
 
 .search-guests {
@@ -38,9 +43,14 @@
 .search-btn-submit:hover,
 .search-btn-circle:hover {
   background-color: rgb(181, 142, 78);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
+/*
+.calendar {
+  top: 720px;
+} */
 
+/*
 .react-datepicker-wrapper {
   width: 50%;
   height: 100%;
@@ -49,7 +59,7 @@
 .react-datepicker__input-container {
   width: 100%;
   height: 100%;
-}
+} */
 
 .offer-icon {
   top: 7px;
