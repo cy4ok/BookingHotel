@@ -3,7 +3,7 @@ import IconWatchBig from "./IconWatchBig";
 
 const EmptyBox = () => {
   return (
-    <div className="flex flex-col mx-auto mt-16 mb-12 items-center max-w-sm">
+    <div className="flex flex-col items-center max-w-sm">
       <IconWatchBig />
       <div className="text-center text-grey text-lg">
         Чтобы заполнить заявку, выберите даты прибытия и выезда

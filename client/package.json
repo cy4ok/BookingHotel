@@ -16,10 +16,13 @@
     "react": "^17.0.1",
     "react-alice-carousel": "^2.1.0",
     "react-datepicker": "^3.3.0",
+    "react-day-picker": "^7.4.8",
     "react-dom": "^17.0.1",
+    "react-flatpickr": "^3.10.6",
     "react-fontawesome": "^1.7.1",
     "react-hook-form": "^6.11.0",
-    "react-responsive-carousel": "^3.2.11",
+    "react-query": "^2.26.4",
+    "react-query-devtools": "^2.6.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "react-slick": "^0.27.13",
@@ -43,6 +46,9 @@
       "react-app/jest"
     ]
   },
+  "prettier": {
+    "tabWidth": 2
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -59,6 +65,7 @@
     "chokidar": "^3.4.3",
     "chokidar-cli": "^2.1.0",
     "file-loader": "^6.2.0",
+    "msw": "^0.24.2",
     "url-loader": "^4.1.1"
   }
 }
