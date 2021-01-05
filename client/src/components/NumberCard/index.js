@@ -1,1 +1,1 @@
-export { default } from "./NumberCard";
+export { default } from "./Superior/Superior";

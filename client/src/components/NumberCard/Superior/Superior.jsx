@@ -46,17 +46,21 @@ import IconIroning from "../img/IconIroning";
 import IconKitchenStove from "../img/IconKitchenStove";
 import IconKettle from "../img/IconKettle";
 import IconArow from "../img/IconArow";
-import "./style.css";
+import "./swiper.css";
 /* import FotoGallery from "./FotoGallery"; */
-import SuperiorItem from "./SuperiorItem.jsx"
+import SuperiorItem from "./SuperiorItem.jsx";
+/* import GallerySwiper from './GallerySwiper.jsx'; */
 
 function Superior() {
     return (
-        <div className="m-6 h-auto">
+        <div className="m-20 h-auto">
             <div className="flex flex-row justify-between">
                 <div className="p-2 w-1/2 h-1/3">
+                   {/*  <React.StrictMode>
+                        <GallerySwiper />
+                    </React.StrictMode>
+                    <FotoGallery /> */}
                     <SuperiorItem />
-                    {/*  <FotoGallery /> */}
                 </div>
                 <div className="mx-5">
                     <div className=" ">

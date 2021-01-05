@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Infrastructure from "../components/Infrastructure";
 import Search from "../components/Search";
+/* import Superior from "../components/NumberCard/Superior/Superior"; */
 
 const ApartmentsPage = () => {
   return (
@@ -14,6 +15,8 @@ const ApartmentsPage = () => {
       />
       <Search />
       <Infrastructure />
+      {/*  <Superior /> */}
+
     </>
   );
 };

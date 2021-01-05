@@ -1,0 +1,77 @@
+/* html,
+body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #000;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .gallery-top {
+    height: 80%;
+    width: 100%;
+  }
+
+  .gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .gallery-thumbs .swiper-slide {
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  .bgi-gallery1{
+    background-image:url(./images/nature-1.jpg);
+  }
+  .bgi-gallery2{
+    background-image:url(./images/nature-2.jpg);
+  }
+  .bgi-gallery3{
+    background-image:url(./images/nature-3.jpg);
+  }
+  .bgi-gallery4{
+    background-image:url(./images/nature-4.jpg);
+  }
+  .bgi-gallery5{
+    background-image:url(./images/nature-5.jpg);
+  }
+  .bgi-gallery6{
+    background-image:url(./images/nature-6.jpg);
+  } */
+
+  .swiper-container {
+    width: 500px;
+  }
+  
+  .swiper-pagination {
+    bottom: 0;
+    padding-bottom: 10px;
+  }
+  
+  .swiper-wrapper {
+    padding-inline-start: 0;
+  }
