@@ -5,7 +5,6 @@ import addDays from "date-fns/addDays";
 import Booking from "../components/Booking";
 import Header from "../components/Header";
 import Search from "../components/Search";
-//import ChoiceRooms from "../components/ChoiceRooms";
 
 const BookingPage = () => {
   const location = useLocation();
@@ -61,12 +60,6 @@ const BookingPage = () => {
         periodFrom={periodFrom}
         periodTo={periodTo}
       />
-      {/* <ChoiceRooms
-        adult={adults}
-        child={children}
-        periodFrom={periodFrom}
-        periodTo={periodTo}
-      /> */}
     </>
   );
 };
