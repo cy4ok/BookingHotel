@@ -14,6 +14,8 @@ const ApartmentsPage = () => {
       />
       <Search />
       <Infrastructure />
+      {/*  <Superior /> */}
+
     </>
   );
 };
