@@ -117,7 +117,7 @@ class TariffsItem extends React.Component {
             <span className="text-black font-bold">
               &nbsp;
               {breakfast
-                ? (nights * priceday + adult * 500 + child * 300).toLocaleString()
+                ? (nights * priceday + adult * 550 + child * 350).toLocaleString()
                 : (nights * priceday).toLocaleString()}
             </span>
             <span className="text-carbonic opacity-75">₽</span>

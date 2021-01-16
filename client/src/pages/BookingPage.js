@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 import addDays from "date-fns/addDays";
 import Booking from "../components/Booking";
 import Header from "../components/Header";
-import ChoiceRooms from "../components/ChoiceRooms";
 import Search from "../components/Search";
 
 const BookingPage = () => {
@@ -56,8 +55,11 @@ const BookingPage = () => {
         isError={isError}
         error={error}
         isIdle={isIdle}
+        adult={adults}
+        child={children}
+        periodFrom={periodFrom}
+        periodTo={periodTo}
       />
-      <ChoiceRooms adult={adults} child={children} periodFrom={periodFrom} periodTo={periodTo} />
     </>
   );
 };

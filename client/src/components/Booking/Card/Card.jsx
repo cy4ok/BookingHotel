@@ -8,13 +8,9 @@ class Card extends Component {
     super(props);
     this.state = {
       item: this.props.item,
+      toggleTariffs: true,
+      priceDay: this.props.item.priceDay,
     };
-    this.toggleTariffs = this.toggleTariffs.bind(this);
-  }
-  toggleTariffs() {
-    this.setState({
-      visible: !this.state.visible,
-    });
   }
   enumerate(num, dec) {
     if (num > 100) num = num % 100;
@@ -67,7 +63,7 @@ class Card extends Component {
                   <div className="mr-2">
                     <Area />
                   </div>
-                  <div className="mt-1">{`${this.props.item.area.toLocaleString()} кв. м`}</div>
+                  <span className="mt-1">{`${this.props.item.area} кв. м`}</span>
                 </div>
               </div>
             </div>
@@ -88,13 +84,9 @@ class Card extends Component {
               <div className="btn-choice bg-btnGold w-24 h-8 text-white">
                 <div
                   className="flex justify-center items-center w-full h-full box-border"
-                  adult={this.props.adult}
-                  child={this.props.child}
-                  nights={this.props.nights}
-                  priceday={this.props.priceday}
-                  visibility={this.state.visible}
-                  onClick={() => {
-                    this.toggleTariffs();
+                  onClick={() => { 
+                    this.props.updateData(this.state.toggleTariffs); 
+                    this.props.passPriceClick(this.state.priceDay);
                   }}
                 >
                   <span className="font-bold text-xs uppercase">Выбрать</span>

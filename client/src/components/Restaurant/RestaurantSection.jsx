@@ -19,7 +19,7 @@ function RestaurantSection() {
   return (
     <div
       className={
-        tumbs ? "flex  flex-row justify-between mt-12" : "flex flex-col mt-12 "
+        tumbs ? "flex flex-row justify-between" : "flex flex-col"
       }
     >
       <div
